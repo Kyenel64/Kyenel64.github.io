@@ -1,0 +1,105 @@
+body
+{
+    display: flex;
+    font-family: Chivo;
+    font-weight: lighter;
+    background-color: #FFF9F8;
+}
+
+html, body
+{
+    flex-direction: row-reverse;
+    margin: 0px;
+    height: 100%;
+}
+
+ul
+{
+    margin: 0px;
+    padding: 0px;
+    font-size: 26px;
+    list-style-type: none;
+    line-height: 50px;
+    color: #989898;
+}
+
+li
+{
+    text-align: right;
+}
+
+li:hover
+{
+    color: black;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.ListBox
+{
+    margin: 0px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.LeftBox
+{
+    display: table;
+    flex-grow: 0.5;
+}
+
+.MiddleBox
+{
+    display: table;
+}
+
+.Line
+{
+    height: 800px;
+    margin: 0px;
+    padding: 0px;
+    border-left: 1px solid black;
+}
+
+.LineBox
+{
+    padding-left: 50px;
+    padding-right: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.Name
+{
+    font-weight: lighter;
+    font-size: 128px;
+    letter-spacing: -8.5px;
+    margin: 0px;
+}
+
+.Desc
+{
+    position: relative;
+    font-weight: lighter;
+    margin: 0px;
+    bottom: 30px;
+    left: 110px;
+    width: fit-content;
+    color: #989898;
+}
+
+.NameBox
+{
+    height: fit-content;
+    margin: 0px;
+    display: table-cell;
+    vertical-align: middle;
+    width: fit-content;
+}
+
+.RightBox
+{
+    display: table;
+    flex-grow: 2;
+}
