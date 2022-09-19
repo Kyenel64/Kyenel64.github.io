@@ -13,6 +13,38 @@ html, body
     height: 100%;
 }
 
+/* Key Frames for CSS animations */
+@keyframes slideInFromLeft
+{
+    0%
+    {
+        transform: translateX(-3%);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0%);
+    }
+}
+@keyframes slideInFromRight
+{
+    0%
+    {
+        transform: translateX(15%);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0%);
+    }
+}
+
+/* Left-hand navigation list properties */
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
 ul
 {
     margin: 0px;
@@ -20,48 +52,47 @@ ul
     font-size: 26px;
     list-style-type: none;
     line-height: 50px;
-    color: #989898;
+    color: #bebebe;
 }
-
 li
 {
-    text-align: right;
+    transition: color 0.5s ease-out;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
 }
-
 li:hover
 {
     color: black;
-    transition: 0.8s;
+    transition: color 0.5s ease-in;
     cursor: pointer;
 }
-
 .ListBox
 {
     margin: 0px;
     display: table-cell;
     vertical-align: middle;
     padding-right: 10px;
+    animation: 1s ease-out 0s 1 slideInFromRight;
 }
-
 .LeftBox
 {
     display: table;
     flex-grow: 0.5;
 }
 
+/* Middle line seperater properties */
 .MiddleBox
 {
     display: table;
 }
-
 .Line
 {
-    height: 800px;
     margin: 0px;
     padding: 0px;
+    height: 40rem;
     border-left: 1px solid black;
 }
-
 .LineBox
 {
     padding-left: 50px;
@@ -70,25 +101,27 @@ li:hover
     vertical-align: middle;
 }
 
+/*Right-hand Name and Description Properties */
 .Name
 {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
     font-weight: lighter;
     font-size: 128px;
     letter-spacing: -8.5px;
     margin: 0px;
 }
-
 .Desc
 {
+    animation: 1s ease-out 0s 1 slideInFromRight;
     position: relative;
+    font-size: 30px;
     font-weight: lighter;
     margin: 0px;
-    bottom: 30px;
-    left: 110px;
+    bottom: 25px;
+    left: 115px;
     width: fit-content;
     color: #989898;
 }
-
 .NameBox
 {
     height: fit-content;
@@ -97,9 +130,26 @@ li:hover
     vertical-align: middle;
     width: fit-content;
 }
-
 .RightBox
 {
     display: table;
     flex-grow: 2;
+}
+
+/* Social icons */
+.SocBox
+{
+    display: table;
+    padding: 50px;
+}
+img
+{
+    animation: 1s ease-out 0s 1 slideInFromRight;
+    width: 50px;
+    display: table-cell;
+    margin-bottom: 30px;
+}
+img:hover
+{
+    cursor: pointer;
 }
