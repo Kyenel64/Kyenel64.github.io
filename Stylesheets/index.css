@@ -1,293 +1,241 @@
-body
+body, html
 {
-    display: flex;
-    font-family: Chivo;
-    font-weight: lighter;
-    background-color: #FFF9F8;
-}
-
-html, body
-{
-    flex-direction: row-reverse;
-    margin: 0px;
     height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #131313;
+    color: #C2C2C2;
+    font-family: 'Public Sans';
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* Key Frames for CSS animations */
-@keyframes slideInFromLeft
-{
-    0%
-    {
-        transform: translateX(-3%);
-        opacity: 0;
-    }
-    100%
-    {
-        transform: translateX(0%);
-    }
-}
-@keyframes slideInFromRight
-{
-    0%
-    {
-        transform: translateX(15%);
-        opacity: 0;
-    }
-    100%
-    {
-        transform: translateX(0%);
-    }
-}
-
-/* Left-hand navigation list properties */
 a
 {
     text-decoration: none;
-    color: inherit;
+    margin: auto 0;
 }
-ul
+
+h2
 {
-    margin: 0px;
-    padding: 0px;
-    font-size: 26px;
-    list-style-type: none;
-    line-height: 50px;
-    color: #bebebe;
-}
-li
-{
+    user-select: none;
+    color: #646464;
+    font-weight: lighter;
+    padding: 0;
+    margin: auto 60px;
+    font-size: 20px;
     transition: color 0.5s ease-out;
-    width: fit-content;
-    height: fit-content;
-    margin-left: auto;
 }
-li:hover
+h2:hover
 {
-    color: black;
+    cursor: pointer;
+    color: #C2C2C2;
     transition: color 0.5s ease-in;
-    cursor: pointer;
-}
-.ListBox
-{
-    margin: 0px;
-    display: table-cell;
-    vertical-align: middle;
-    padding-right: 10px;
-    animation: 1s ease-out 0s 1 slideInFromRight;
-}
-.LeftBox
-{
-    display: table;
-    flex-grow: 0.5;
 }
 
-/* Middle line seperater properties */
-.MiddleBox
+
+/*Top Navigation Bar*/
+.topbar
 {
-    display: table;
-}
-.Line
-{
-    margin: 0px;
-    padding: 0px;
-    height: 40rem;
-    border-left: 1px solid black;
-}
-.LineBox
-{
-    padding-left: 20px;
-    padding-right: 50px;
-    display: table-cell;
-    vertical-align: middle;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    animation: 1.5s fade-down ease-in-out;
 }
 
-/*Right-hand Name and Description Properties */
-.Name
+
+/*Center Name box */
+#home
 {
-    animation: 1s ease-out 0s 1 slideInFromLeft;
+    opacity: 100;
+    flex-grow: 1;
+    display: table;
+}
+h1
+{
+    user-select: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+    font-size: 120px;
     font-weight: lighter;
-    font-size: 128px;
-    letter-spacing: -8.5px;
-    margin: 0px;
-}
-.Desc
-{
-    animation: 1s ease-out 0s 1 slideInFromRight;
-    position: relative;
-    font-size: 30px;
-    font-weight: lighter;
-    margin: 0px;
-    bottom: 25px;
-    left: 115px;
-    width: fit-content;
-    color: #989898;
-}
-.NameBox
-{
-    height: fit-content;
-    margin: 0px;
-    display: table-cell;
-    vertical-align: middle;
-    width: fit-content;
-}
-.RightBox
-{
-    display: table;
-    flex-grow: 2;
-}
+    letter-spacing: 2rem;
+    text-indent: 2rem;
 
-/* Social icons */
-.SocBox
-{
-    display: table;
-    padding: 50px;
+    animation: 2s fade-opacity ease-in-out;
 }
-img
+h1:hover
 {
-    animation: 1s ease-out 0s 1 slideInFromRight;
-    width: 50px;
-    display: table-cell;
-    margin-bottom: 30px;
-}
-img:hover
-{
-    cursor: pointer;
+    cursor: default;
 }
 
 
-/* Media Queries */
-
-/* Height */
-@media (max-height: 700px)
+/*Bottom social links bar */
+.bottombar
 {
-    .Line
-    {
-        height: 30rem;
-    }
+    height: 8%;
+    display: flex;
+    justify-content: center;
 }
-@media (max-height: 550px)
+.link
 {
-    .Line
-    {
-        height: 20rem;
-    }
+    font-size: 16px;
+    animation: 1.5s fade-up ease-in-out;
 }
 
-/* 1250px */
-@media (max-width: 1250px)
+/* About Section */
+#about
 {
-    .LineBox
+    display: none;
+    opacity: 0;
+}
+
+/* Projects Section */
+#projects
+{
+    display: none;
+    opacity: 0;
+}
+
+/* Contact Section */
+#contact
+{
+    display: none;
+    opacity: 0;
+}
+
+
+/* Animations */
+@keyframes fade-up
+{
+    0%
     {
-        padding-left: 10px;
-        padding-right: 40px;
+        opacity: 0;
+        transform: translateY(20px);
     }
-    .Name
+    100%
     {
-        font-size: 100px;
-    }
-    .Desc
-    {
-        font-size: 20px;
-        left: 100px;
-    }
-    img
-    {
-        margin-bottom: 20px;
-        width: 40px;
-    }
-    .SocBox
-    {
-        padding: 40px;
-    }
-    ul
-    {
-        font-size: 20px;
-        line-height: 40px;
+        opacity: 100;
+        transform: translate(0%);
     }
 }
 
-@media (max-width: 1025px)
+@keyframes fade-down
 {
-    .LineBox
+    0%
     {
-        padding-left: 5px;
-        padding-right: 30px;
+        opacity: 0;
+        transform: translateY(-20px);
     }
-    .Name
+    100%
+    {
+        opacity: 100;
+        transform: translate(0%);
+    }
+}
+
+@keyframes fade-opacity
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 100;
+    }
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1200px)
+{
+    h1
     {
         font-size: 80px;
     }
-    .Desc
+
+    h2
     {
         font-size: 15px;
-        left: 80px;
-        bottom: 20px;
+        margin: auto 30px;
     }
-    ul
+    .link
     {
-        font-size: 15px;
-        line-height: 30px;
-    }
-    .SocBox
-    {
-        padding: 30px;
-    }
-    img
-    {
-        margin-bottom: 10px;
-        width: 30px;
+        font-size: 13px;
     }
 }
 
-@media (max-width: 650px)
+@media only screen and (max-width: 950px)
 {
-    html, body
+    h1
     {
-        flex-direction: column-reverse;
-        align-items: center;
+        font-size: 60px;
     }
 
-    .LineBox, .MiddleBox, .Line, .ListBox
+    h2
     {
-        visibility: hidden;
-        flex: none;
-        display: none;
+        font-size: 15px;
+        margin: auto 20px;
+    }
+    .link
+    {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 750px)
+{
+    h1
+    {
+        font-size: 50px;
+        letter-spacing: 0.8rem;
+        text-indent: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 650px)
+{
+    h1
+    {
+        font-size: 35px;
     }
 
-    .NameBox
+    h2
     {
-        padding: 0px;
-    }
-    .Name
-    {
-        font-size: 110px;
-        width: 350px;
-        margin-left: 10%;
-        line-height: 95px;
-    }
-    .Desc
-    {
-        padding-left: 8px;
-        margin-left: 10%;
-        position: inherit;
-        font-size: 26px;
-        width: 65%;
-    }
-    .DividerLine
-    {
-        width: 80%;
-        margin: 0 auto;
-        border-top: 1px solid black;
+        font-size: 13px;
+        margin: auto 20px;
     }
 
-    .SocialBox
+    .link
     {
-        width: 100%;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 500px)
+{
+    h1
+    {
+        font-size: 30px;
+        letter-spacing: 1rem;
+        text-indent: 1rem;
     }
 
-    .LeftBox
+}
+
+@media only screen and (max-width: 400px)
+{
+    h1
     {
-        border: 1px solid black;
-        width: 100%;
+        font-size: 25px;
+        letter-spacing: 0.7rem;
+        text-indent: 0.7rem;
     }
+
 }
