@@ -1,0 +1,252 @@
+html, body
+{
+    background-color: #D1D1D1;
+    height: 100%;
+    width: 100%;
+    font-family: 'Public Sans';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#topBar
+{
+    font-weight: 100;
+    font-size: 8px;
+    display: flex;
+    letter-spacing: 3px;
+    color: #282828;
+    justify-content: center;
+    margin-top: 20px;
+}
+#bar
+{
+    border-left: 1px solid black;
+}
+#header1
+{
+    margin: auto 20px;
+    width: 200px;
+    text-align: right;
+}
+#header2
+{
+    margin: auto 20px;
+    width: 200px;
+}
+
+#main
+{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+span
+{
+    background-color: #282828;
+    border-radius: 50%;
+    margin: auto 28px;
+    transition: background-color 0.5s ease-in-out;
+}
+span:hover
+{
+    cursor: pointer;
+}
+.line
+{
+    color: #282828;
+    font-size: 20px;
+    visibility: hidden;
+    opacity: 0;
+    width: 150px;
+    min-height: 40px;
+    bottom: 40px;
+    position: relative;
+    border-top: 1px dotted #282828;
+    border-right: 1px dotted #282828;
+    transition: 1s ease-out;
+}
+
+#Mercury
+{
+    min-height: 25px;
+    min-width: 25px;
+    max-height: 25px;
+    max-width: 25px;
+}
+#Mercury:hover
+{
+    background-color: #797979;
+}
+#Mercury:hover .line
+{
+    visibility: visible;
+    opacity: 100;
+    transition: 1s ease-in-out;
+}
+#Mercury .line
+{
+    right: 137px;
+}
+#Venus
+{
+    min-height: 45px;
+    min-width: 45px;
+    max-height: 45px;
+    max-width: 45px;
+}
+#Venus:hover
+{
+    background-color: #ADA788;
+}
+#Venus:hover .line
+{
+    visibility: visible;
+    opacity: 100;
+    transition: 1s ease-in-out;
+}
+#Venus .line
+{
+    right: 127px;
+}
+#Earth
+{
+    min-height: 50px;
+    min-width: 50px;
+    max-height: 50px;
+    max-width: 50px;
+}
+#Earth:hover
+{
+    background-color: #4F7780;
+}
+#Earth:hover .line
+{
+    visibility: visible;
+    opacity: 100;
+    transition: 1s ease-in-out;
+}
+#Earth .line
+{
+    right: 125px;
+}
+#Mars
+{
+    min-height: 30px;
+    min-width: 30px;
+    max-height: 30px;
+    max-width: 30px;
+}
+#Mars:hover
+{
+    background-color: #9F4242;
+}
+#Mars:hover .line
+{
+    visibility: visible;
+    opacity: 100;
+    transition: 1s ease-in-out;
+}
+#Mars .line
+{
+    right: 135px;
+}
+#Jupiter
+{
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 200px;
+    max-width: 200px;
+}
+#Jupiter:hover
+{
+    background-color: #5C4432;
+}
+#Jupiter:hover .line
+{
+    visibility: visible;
+    opacity: 100;
+    transition: 1s ease-in-out;
+}
+#Jupiter .line
+{
+    width: 200px;
+    right: 100px;
+}
+#Saturn
+{
+    min-height: 180px;
+    min-width: 180px;
+    max-height: 180px;
+    max-width: 180px;
+}
+#Saturn:hover
+{
+    background-color: #AD8B64;
+}
+#Saturn:hover .line
+{
+    visibility: visible;
+    opacity: 100;
+    transition: 1s ease-in-out;
+}
+#Saturn .line
+{
+    right: 60px;
+}
+#Uranus
+{
+    min-height: 80px;
+    min-width: 80px;
+    max-height: 80px;
+    max-width: 80px;
+}
+#Uranus:hover
+{
+    background-color: #8FA6AB;
+}
+#Uranus:hover .line
+{
+    visibility: visible;
+    opacity: 100;
+    transition: 1s ease-in-out;
+}
+#Uranus .line
+{
+    text-align: right;
+    border-right: none;
+    border-left: 1px dotted #282828;
+    left: 40px;
+}
+#Neptune
+{
+    min-height: 75px;
+    min-width: 75px;
+    max-height: 75px;
+    max-width: 75px;
+    margin-right: 155px;
+}
+#Neptune:hover
+{
+    background-color: #3B6892;
+}
+#Neptune:hover .line
+{
+    visibility: visible;
+    opacity: 100;
+    transition: 1s ease-in-out;
+}
+#Neptune .line
+{
+    text-align: right;
+    border-right: none;
+    border-left: 1px dotted #282828;
+    left: 37px;
+}
+
+#bottomBar
+{
+    min-height: 48px;
+}

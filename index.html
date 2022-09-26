@@ -4,66 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kye Nelson</title>
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Public+Sans">
-
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/about.css">
-    <link rel="stylesheet" type="text/css" href="css/projects.css">
-    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="topbar">
-        <h2 onclick="onPress('home')">HOME</h2>
-        <h2 onclick="onPress('about')">ABOUT</h2>
-        <h2 onclick="onPress('projects')">PROJECTS</h2>
-        <h2 onclick="onPress('contact')">CONTACT</h2>
+    <div id="topBar">
+        <h2 id="header1">KYE NELSON</h2>
+        <div id="bar"></div>
+        <h2 id="header2">UNIVERSITY OF WASHINGTON</h2>
     </div>
 
-    <div id="home">
-        <h1>KYE NELSON</h1>
+    <div id="main">
+        <span id="Mercury" onclick="open('github')">
+            <div class="line">GitHub</div>
+        </span>
+        <span id="Venus">
+            <div class="line">LinkedIn</div>
+        </span>
+        <span id="Earth">
+            <div class="line">Home</div>
+        </span>
+        <span id="Mars">
+            <div class="line">About Me</div>
+        </span>
+        <span id="Jupiter">
+            <div class="line">Astrophotography</div>
+        </span>
+        <span id="Saturn">
+            <div class="line">NOAA</div>
+        </span>
+        <span id="Uranus">
+            <div class="line">AStar Engine</div>
+        </span>
+        <span id="Neptune">
+            <div class="line">Contact Me</div>
+        </span>
     </div>
 
-    <div id="about">
-        <img src="Images/me.jpg" id="meJPG">
-        <h1 id="aboutText">I’m a third year computer science major at the University of Washington. I focus in 3D computer graphics, hoping to get involved in the space industry.</h1>
-        <ul id="skillsList">Skills:
-            <li class="skill">C++</li>
-            <li class="skill">CUDA</li>
-            <li class="skill">Python</li>
-            <li class="skill">HTML/CSS</li>
-            <li class="skill">Java</li>
-        </ul>
+    <div id="bottomBar">
+
     </div>
 
-    <div id="projects">
-
-        <div class="projectBox">
-            <h1 class="projectHeader">Astrophotography</h1>
-            <h2 class="projectDesc">Photographs of deep space objects</h2>
-            <img src="Images/astro.jpg" class="projectIMG">
-            <h2 class="GitHubButton">GitHub</h2>
-        </div>
-
-        <div id="NOAA">
-
-        </div>
-
-        <div id="AStar">
-
-        </div>
-    </div>
-
-    <div id="contact">
-        <h1>CONTACT</h1>
-    </div>
-
-    <div class="bottombar">
-        <a href="https://instagram.com/kyenelson" target="_blank"><h2 class="link">INSTAGRAM</h2></a>
-        <a href="https://github.com/kyenel64" target="_blank"><h2 class="link">GITHUB</h2></a>
-        <a href="https://www.linkedin.com/in/kye-nelson-8b48091aa/" target="_blank"><h2 class="link">LINKEDIN</h2></a>
-    </div>
-
-    <script src="scripts/index.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
