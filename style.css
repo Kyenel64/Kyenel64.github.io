@@ -1,3 +1,17 @@
+:root
+{
+    --marsRadius: 30px;
+    --marsColor: #9F4242;
+    --jupiterRadius: 200px;
+    --jupiterColor: #5C4432;
+    --saturnRadius: 180px;
+    --saturnColor: #AD8B64;
+    --uranusRadius: 80px;
+    --uranusColor: #8FA6AB;
+    --neptuneRadius: 75px;
+    --neptuneColor: #3B6892;
+}
+
 html, body
 {
     background-color: #D1D1D1;
@@ -8,6 +22,7 @@ html, body
     padding: 0;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 #topBar
@@ -134,14 +149,14 @@ span:hover
 }
 #Mars
 {
-    min-height: 30px;
-    min-width: 30px;
-    max-height: 30px;
-    max-width: 30px;
+    min-height: var(--marsRadius);
+    min-width: var(--marsRadius);
+    max-height: var(--marsRadius);
+    max-width: var(--marsRadius);
 }
 #Mars:hover
 {
-    background-color: #9F4242;
+    background-color: var(--marsColor);
 }
 #Mars:hover .line
 {
@@ -155,14 +170,14 @@ span:hover
 }
 #Jupiter
 {
-    min-height: 200px;
-    min-width: 200px;
-    max-height: 200px;
-    max-width: 200px;
+    min-height: var(--jupiterRadius);
+    min-width: var(--jupiterRadius);
+    max-height: var(--jupiterRadius);
+    max-width: var(--jupiterRadius);
 }
 #Jupiter:hover
 {
-    background-color: #5C4432;
+    background-color: var(--jupiterColor);
 }
 #Jupiter:hover .line
 {
@@ -177,14 +192,14 @@ span:hover
 }
 #Saturn
 {
-    min-height: 180px;
-    min-width: 180px;
-    max-height: 180px;
-    max-width: 180px;
+    min-height: var(--saturnRadius);
+    min-width: var(--saturnRadius);
+    max-height: var(--saturnRadius);
+    max-width: var(--saturnRadius);
 }
 #Saturn:hover
 {
-    background-color: #AD8B64;
+    background-color: var(--saturnColor);
 }
 #Saturn:hover .line
 {
@@ -198,14 +213,14 @@ span:hover
 }
 #Uranus
 {
-    min-height: 80px;
-    min-width: 80px;
-    max-height: 80px;
-    max-width: 80px;
+    min-height: var(--uranusRadius);
+    min-width: var(--uranusRadius);
+    max-height: var(--uranusRadius);
+    max-width: var(--uranusRadius);
 }
 #Uranus:hover
 {
-    background-color: #8FA6AB;
+    background-color: var(--uranusColor);
 }
 #Uranus:hover .line
 {
@@ -222,15 +237,15 @@ span:hover
 }
 #Neptune
 {
-    min-height: 75px;
-    min-width: 75px;
-    max-height: 75px;
-    max-width: 75px;
+    min-height: var(--neptuneRadius);
+    min-width: var(--neptuneRadius);
+    max-height: var(--neptuneRadius);
+    max-width: var(--neptuneRadius);
     margin-right: 155px;
 }
 #Neptune:hover
 {
-    background-color: #3B6892;
+    background-color: var(--neptuneColor);
 }
 #Neptune:hover .line
 {
@@ -244,6 +259,61 @@ span:hover
     border-right: none;
     border-left: 1px dotted #282828;
     left: 37px;
+}
+
+.pages
+{
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    margin: auto;
+}
+#JupiterPage
+{
+    
+    width: var(--jupiterRadius);
+    height: var(--jupiterRadius);
+    background-color: var(--jupiterColor);
+}
+#MarsPage
+{
+    width: var(--marsRadius);
+    height: var(--marsRadius);
+    background-color: var(--marsColor);
+}
+#SaturnPage
+{
+    width: var(--saturnRadius);
+    height: var(--saturnRadius);
+    background-color: var(--saturnColor);
+}
+#UranusPage
+{
+    width: var(--uranusRadius);
+    height: var(--uranusRadius);
+    background-color: var(--uranusColor);
+}
+#NeptunePage
+{
+    width: var(--neptuneRadius);
+    height: var(--neptuneRadius);
+    background-color: var(--neptuneColor);
+}
+
+@keyframes expand
+{
+    0% 
+    {
+        visibility: visible;
+        transform: scale(0);
+    }
+    100%
+    {
+        transform: scale(100);
+        visibility: visible;
+    }
 }
 
 #bottomBar

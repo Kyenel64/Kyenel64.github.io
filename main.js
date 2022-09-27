@@ -1,31 +1,38 @@
-var id = null;
-
-function linkPress()
+function openSite(site)
 {
-    var elem = document.getElementById("Mercury");
-    var size = elem.getAttribute("width");
-    clearInterval(id);
-    id = setInterval(frame, 0.05);
-    function frame()
+    if (site == 'github')
     {
-        if (size == 1000)
-        {
-            clearInterval(id);
-        }
-        else
-        {
-            size++;
-            elem.style.minHeight = size + 'px';
-            elem.style.minWidth = size + 'px';
-        }
+        window.open("https://www.github.com/kyenel64", "_blank").focus();
     }
-    console.log(size);
+    if (site == 'linkedin')
+    {
+        window.open("https://www.linkedin.com/in/kye-nelson/", "_blank").focus();
+    }
+    if (site == 'home')
+    {
+        location.reload();
+    }
 }
 
-function open(website)
+function expand(name)
 {
-    if (website = 'github')
+    var y = document.querySelector('#' + name).getBoundingClientRect().top;
+    var x = document.querySelector('#' + name).getBoundingClientRect().left;
+    console.log(y);
+    var page = document.getElementById(name + 'Page');
+    page.style.top = y + 'px';
+    page.style.left = x + 'px';
+    if (name == "Mars")
     {
-        website.open("https://github.com/kyenel64", "_blank");
+        page.style.animation = "expand 1s ease-out forwards";
     }
+    else if (name == "Uranus" || name == "Neptune")
+    {
+        page.style.animation = "expand 3s ease-out forwards";
+    }
+    else
+    {
+        page.style.animation = "expand 7s ease-out forwards";
+    }
+    
 }

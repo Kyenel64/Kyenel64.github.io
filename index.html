@@ -17,31 +17,38 @@
     </div>
 
     <div id="main">
-        <span id="Mercury" onclick="open('github')">
+        <span id="Mercury" onclick="openSite('github')">
             <div class="line">GitHub</div>
         </span>
-        <span id="Venus">
+        <span id="Venus" onclick="openSite('linkedin')">
             <div class="line">LinkedIn</div>
         </span>
-        <span id="Earth">
+        <span id="Earth" onclick="openSite('home')">
             <div class="line">Home</div>
         </span>
-        <span id="Mars">
+        <span id="Mars" onclick="expand('Mars')">
             <div class="line">About Me</div>
         </span>
-        <span id="Jupiter">
+        <span id="Jupiter" onclick="expand('Jupiter')">
             <div class="line">Astrophotography</div>
         </span>
-        <span id="Saturn">
+        <span id="Saturn" onclick="expand('Saturn')">
             <div class="line">NOAA</div>
         </span>
-        <span id="Uranus">
+        <span id="Uranus" onclick="expand('Uranus')">
             <div class="line">AStar Engine</div>
         </span>
-        <span id="Neptune">
+        <span id="Neptune" onclick="expand('Neptune')">
             <div class="line">Contact Me</div>
         </span>
     </div>
+
+    <div class="pages" id="MarsPage"></div>
+    <div class="pages" id="JupiterPage"></div>
+    <div class="pages" id="SaturnPage"></div>
+    <div class="pages" id="UranusPage"></div>
+    <div class="pages" id="NeptunePage"></div>
+    
 
     <div id="bottomBar">
 
