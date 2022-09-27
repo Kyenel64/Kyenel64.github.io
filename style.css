@@ -41,6 +41,8 @@ html, body
 }
 #header1
 {
+    font-size: 20px;
+    font-weight: lighter;
     margin: auto 20px;
     width: 200px;
     text-align: right;
@@ -48,6 +50,7 @@ html, body
 #header2
 {
     margin: auto 20px;
+    font-weight: 500;
     width: 200px;
 }
 
@@ -69,19 +72,31 @@ span:hover
 {
     cursor: pointer;
 }
+.label
+{
+    user-select: none;
+    position: relative;
+    display: grid;
+    grid-template-rows: 90% 10%;
+    justify-content: center;
+}
 .line
 {
-    color: #282828;
-    font-size: 20px;
-    visibility: hidden;
-    opacity: 0;
-    width: 150px;
-    min-height: 40px;
-    bottom: 40px;
-    position: relative;
-    border-top: 1px dotted #282828;
-    border-right: 1px dotted #282828;
-    transition: 1s ease-out;
+    margin: 0 auto;
+    border-left: 1px solid #b3b3b3;
+    width: 1px;
+}
+.labelText
+{
+
+    margin: 0;
+    margin-top: 5px;
+    font-family: "Public Sans";
+    font-weight: lighter;
+    font-size: 18px;
+    color: #b3b3b3;
+    width: 400px;
+    text-align: center;
 }
 
 #Mercury
@@ -95,16 +110,12 @@ span:hover
 {
     background-color: #797979;
 }
-#Mercury:hover .line
+#Mercury .label
 {
-    visibility: visible;
-    opacity: 100;
-    transition: 1s ease-in-out;
+    top: 35px;
+    height: 400px;
 }
-#Mercury .line
-{
-    right: 137px;
-}
+
 #Venus
 {
     min-height: 45px;
@@ -116,16 +127,12 @@ span:hover
 {
     background-color: #ADA788;
 }
-#Venus:hover .line
+#Venus .label
 {
-    visibility: visible;
-    opacity: 100;
-    transition: 1s ease-in-out;
+    top: 55px;
+    height: 370px;
 }
-#Venus .line
-{
-    right: 127px;
-}
+
 #Earth
 {
     min-height: 50px;
@@ -137,16 +144,12 @@ span:hover
 {
     background-color: #4F7780;
 }
-#Earth:hover .line
+#Earth .label
 {
-    visibility: visible;
-    opacity: 100;
-    transition: 1s ease-in-out;
+    top: 60px;
+    height: 350px;
 }
-#Earth .line
-{
-    right: 125px;
-}
+
 #Mars
 {
     min-height: var(--marsRadius);
@@ -158,16 +161,12 @@ span:hover
 {
     background-color: var(--marsColor);
 }
-#Mars:hover .line
+#Mars .label
 {
-    visibility: visible;
-    opacity: 100;
-    transition: 1s ease-in-out;
+    top: calc(var(--marsRadius) + 10px);
+    height: 350px;
 }
-#Mars .line
-{
-    right: 135px;
-}
+
 #Jupiter
 {
     min-height: var(--jupiterRadius);
@@ -179,17 +178,12 @@ span:hover
 {
     background-color: var(--jupiterColor);
 }
-#Jupiter:hover .line
+#Jupiter .label
 {
-    visibility: visible;
-    opacity: 100;
-    transition: 1s ease-in-out;
+    top: calc(var(--jupiterRadius) + 10px);
+    height: 240px;
 }
-#Jupiter .line
-{
-    width: 200px;
-    right: 100px;
-}
+
 #Saturn
 {
     min-height: var(--saturnRadius);
@@ -201,16 +195,12 @@ span:hover
 {
     background-color: var(--saturnColor);
 }
-#Saturn:hover .line
+#Saturn .label
 {
-    visibility: visible;
-    opacity: 100;
-    transition: 1s ease-in-out;
+    top: calc(var(--saturnRadius) + 10px);
+    height: 250px;
 }
-#Saturn .line
-{
-    right: 60px;
-}
+
 #Uranus
 {
     min-height: var(--uranusRadius);
@@ -222,19 +212,12 @@ span:hover
 {
     background-color: var(--uranusColor);
 }
-#Uranus:hover .line
+#Uranus .label
 {
-    visibility: visible;
-    opacity: 100;
-    transition: 1s ease-in-out;
+    top: calc(var(--uranusRadius) + 10px);
+    height: 305px;
 }
-#Uranus .line
-{
-    text-align: right;
-    border-right: none;
-    border-left: 1px dotted #282828;
-    left: 40px;
-}
+
 #Neptune
 {
     min-height: var(--neptuneRadius);
@@ -247,18 +230,10 @@ span:hover
 {
     background-color: var(--neptuneColor);
 }
-#Neptune:hover .line
+#Neptune .label
 {
-    visibility: visible;
-    opacity: 100;
-    transition: 1s ease-in-out;
-}
-#Neptune .line
-{
-    text-align: right;
-    border-right: none;
-    border-left: 1px dotted #282828;
-    left: 37px;
+    top: calc(var(--neptuneRadius) + 10px);
+    height: 308px;
 }
 
 .pages
