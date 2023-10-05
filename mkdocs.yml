@@ -1,2 +1,17 @@
-site_name: Locus
-theme: lux
+site_name: Locus Game Engine
+theme:
+  palette:
+    scheme: slate
+    primary: grey
+  name: material
+  logo: 'LocusLogo_Border.png'
+  features:
+    - navigation.tabs
+
+# page tree
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Introduction: introduction.md
+    - Getting Started: GettingStarted.md
+  - Documentation: Documentation.md
