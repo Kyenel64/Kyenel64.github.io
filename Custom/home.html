@@ -1,0 +1,86 @@
+{#-
+    This file was automatically generated - do not edit
+  -#}
+  {% extends "main.html" %}
+  {% block tabs %}
+    {{ super() }}
+    <style>
+      h1
+      {
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 0px;
+      }
+      h2
+      {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .DemoScene
+      {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      p
+      {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .md-button
+      {
+        border-style: solid;
+        border-radius: 10px;
+        border-color: rgb(87, 82, 69);
+        width: 150px;
+        font-size: 20px;
+        padding: 10px;
+        transition: background-color 100ms ease-out 100ms
+      }
+      .md-button:hover
+      {
+        background-color: rgb(87, 82, 69);
+      }
+      .buttonDiv
+      {
+        margin: 20px;
+      }
+    </style>
+
+    <img src = "../Resources/LocusLogoWithName_Gradient.png">
+
+    <h1>An open-source game engine</h1>
+    <p>Lightweight, and feature-rich. <br>Capable of creating complete 2D games.</p>
+
+    <h2>The Current State</h2>
+    <p>Locus is still in the alpha stages of development. The focus right now is on the 2D systems of the engine. 
+      <br>Once the engine is capable of creating 2D games, development for Locus 3D will begin.
+    </p>
+    <p>Progress can be followed here</p>
+    <div class="buttonDiv" style = "text-align: center;">
+      <a href="https://trello.com/b/NNDPkCjF/locus-kanban" class="md-button md-button--primary" target="_blank">Trello</a>
+    </div>
+
+    <h2>Documentation</h2>
+    <div class="buttonDiv" style = "text-align: center;">
+      <a href="../Getting_Started/GettingStarted" class="md-button md-button--primary">Getting Started</a>
+    </div>
+    <div class="buttonDiv" style="text-align: center;">
+    <a href="../Documentation/Documentation" class="md-button md-button--primary">Editor Manual</a>
+    </div>
+    <div class="buttonDiv" style = "text-align: center;">
+    <a href="../Documentation/Documentation" class="md-button md-button--primary">Scripting API</a>
+    </div>
+
+    <h2>Demo Scene</h2>
+    <img class = "DemoScene" src = "../Resources/DemoScene.png">
+
+    <h2>Support</h2>
+    <p>The best way to support the engine is to contribute! <br> Open an issue or pull request on the <a href = "https://github.com/kyenel64/Locus-Engine" style="color: #df8e4b" target="_blank">GitHub repository</a>.</p>
+
+  {% endblock %}
+  {% block content %}{% endblock %}
+  {% block footer %}{% endblock %}

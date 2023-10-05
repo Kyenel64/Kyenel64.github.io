@@ -1,0 +1,24 @@
+:root 
+{
+    --md-primary-fg-color:        #383635;
+    --md-primary-fg-color--light: #5f5853;
+    --md-primary-fg-color--dark:  #5f5853;
+    --md-typeset-a-color: #09bfdd;
+
+    
+}
+
+.md-content
+{
+    --md-typeset-a-color: #df8e4b;
+}
+
+.md-nav
+{
+    --md-typeset-a-color: #df8e4b;
+}
+
+.md-footer
+{
+    visibility: hidden;
+}
