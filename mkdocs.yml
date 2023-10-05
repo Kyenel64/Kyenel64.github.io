@@ -10,12 +10,14 @@ theme:
   custom_dir: docs/Custom/
   font:
     text: Inter
+  favicon: img/logo.ico
 
 repo_url: https://github.com/Kyenel64/Locus-Engine
 repo_name: Locus-Engine
 
 extra_css:
   - stylesheets/extra.css
+
 
 # page tree
 nav:
