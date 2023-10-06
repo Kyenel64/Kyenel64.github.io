@@ -18,6 +18,11 @@ repo_name: Locus-Engine
 extra_css:
   - stylesheets/extra.css
 
+extra:
+  analytics:
+    provider: google
+    property: G-QHSJC6QMQX
+
 
 # page tree
 nav:
