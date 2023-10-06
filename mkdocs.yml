@@ -26,5 +26,5 @@ nav:
     - Introduction: About/Introduction.md
   - Getting Started:
     - Introduction: Getting_Started/Introduction.md
-    - How to Install: Getting_Started/HowToInstall.md
+    - How to Build: Getting_Started/HowToBuild.md
   - Documentation: Documentation/Documentation.md

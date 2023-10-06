@@ -1,5 +1,5 @@
 # Introduction
-Locus is an open-source 2D/3D game engine developed by Kye Nelson (<a href="https://github.com/Kyenel64" target="_blank">Kyenel64</a>). <br>
+Locus is an open-source, general-purpose 2D/3D game engine developed by Kye Nelson (<a href="https://github.com/Kyenel64" target="_blank">Kyenel64</a>). <br>
 It aims to be a lightweight, feature-rich game engine capable of creating any type of game from scratch.
 The engine is ECS-based and the scripting language is in C#, making it easier to learn for many game developers.
 
