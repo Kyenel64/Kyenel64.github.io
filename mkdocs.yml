@@ -34,4 +34,9 @@ nav:
     - How to Build: Getting_Started/HowToBuild.md
     - Workflow: Getting_Started/Workflow.md
     - Example Project - Solar System: Getting_Started/ExampleProject_SolarSystem.md
-  - Documentation: Documentation/Documentation.md
+  - Documentation:
+    - Introduction: Documentation/Introduction.md
+    - Classes:
+      - Component: Documentation/Classes/Component.md
+      - Entity: Documentation/Classes/Entity.md
+      - Vec3: Documentation/Classes/Vec3.md
