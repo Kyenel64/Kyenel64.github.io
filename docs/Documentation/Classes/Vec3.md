@@ -1,5 +1,7 @@
 # Vec3
-Released in v0.1.1-alpha <br>
+<div class = "classInfo">
+    Released in v0.1.1-alpha / Last updated in v0.1.1-alpha
+</div>
 
 ## Description
 3D floating point vector class used for 3D and 2D position and vector operations.

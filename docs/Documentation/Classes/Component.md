@@ -1,5 +1,7 @@
 # Component
-Released in v0.1.1-alpha <br>
+<div class = "classInfo">
+    Released in v0.1.1-alpha / Last updated in v0.1.1-alpha
+</div>
 
 ## Description
 Base class for all components. Only contains the entity the component is attached to.
