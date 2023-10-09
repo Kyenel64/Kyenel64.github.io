@@ -11,6 +11,38 @@
 .md-content
 {
     --md-typeset-a-color: #df8e4b;
+
+}
+
+.md-content h1
+{
+    margin-bottom: 20px;
+    color: rgb(225, 220, 220);
+}
+
+.md-content h2
+{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: rgb(225, 220, 220);
+}
+
+.md-content p
+{
+    margin-top: 10px;
+    color: rgb(198, 196, 189);
+}
+
+.md-content ul
+{
+    margin-top: 10px;
+    color: rgb(198, 196, 189);
+}
+
+.md-content .classInfo
+{
+    font-size: 0.8em;
+    color: grey;
 }
 
 .md-nav
