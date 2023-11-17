@@ -46,7 +46,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../assets/css/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -522,15 +522,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-setupbat" class="md-nav__link">
-    Run Setup.bat
+  <a href="#generating-the-project" class="md-nav__link">
+    Generating the project
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#build-and-run" class="md-nav__link">
-    Build and run
+  <a href="#building-the-solution" class="md-nav__link">
+    Building the solution
   </a>
   
 </li>
@@ -802,15 +802,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-setupbat" class="md-nav__link">
-    Run Setup.bat
+  <a href="#generating-the-project" class="md-nav__link">
+    Generating the project
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#build-and-run" class="md-nav__link">
-    Build and run
+  <a href="#building-the-solution" class="md-nav__link">
+    Building the solution
   </a>
   
 </li>
@@ -848,11 +848,11 @@ If you would like to download the most recent release of Locus, head to the <a h
 <p>Locus utilizes submodules so downloading the zip of the source code will not work. 
 Instead, use the following command within the directory you want to download Locus. <br> 
 <code>git clone --recurse-submodules https://github.com/kyenel64/Locus-Engine</code></p>
-<h2 id="run-setupbat">Run Setup.bat</h2>
+<h2 id="generating-the-project">Generating the project</h2>
 <p>Run <code>Scripts/Setup.bat</code> and follow the prompts to install premake and the Vulkan shader toolchain. <br>
 Make sure 'Shader Toolchain Debug Symbols - 64-bit' is selected when the Vulkan install pop-up opens.
 You might have to run the setup script twice if prompted.</p>
-<h2 id="build-and-run">Build and run</h2>
+<h2 id="building-the-solution">Building the solution</h2>
 <p>Once the setup is finished, open <code>Locus.sln</code> which should be generated in the root directory. <br>
 Choose the configuration and build the solution. <code>Locus-Editor.exe</code> will be generated in <code>bin/{configuration}-windows-x86_64/Locus-Editor</code>.</p>
 
