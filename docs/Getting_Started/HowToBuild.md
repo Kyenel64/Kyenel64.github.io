@@ -14,11 +14,11 @@ Locus utilizes submodules so downloading the zip of the source code will not wor
 Instead, use the following command within the directory you want to download Locus. <br> 
 `git clone --recurse-submodules https://github.com/kyenel64/Locus-Engine`
 
-## Run Setup.bat
+## Generating the project
 Run `Scripts/Setup.bat` and follow the prompts to install premake and the Vulkan shader toolchain. <br>
 Make sure 'Shader Toolchain Debug Symbols - 64-bit' is selected when the Vulkan install pop-up opens.
 You might have to run the setup script twice if prompted.
 
-## Build and run
+## Building the solution
 Once the setup is finished, open `Locus.sln` which should be generated in the root directory. <br>
 Choose the configuration and build the solution. `Locus-Editor.exe` will be generated in `bin/{configuration}-windows-x86_64/Locus-Editor`.
