@@ -6,7 +6,11 @@ theme:
   name: material
   logo: 'Resources/LocusLogo_Border.png'
   features:
+    - navigation.instant
+    - navigation.instant.progress
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
   custom_dir: docs/Custom/
   font:
     text: Inter
