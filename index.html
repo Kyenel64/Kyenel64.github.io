@@ -1,1008 +1,149 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      
-      
-        <link rel="next" href="About/Introduction/">
-      
-      
-      <link rel="icon" href="img/logo.ico">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.3">
-    
-    
-      
-        <title>Locus Game Engine</title>
-      
-    
-    
-      <link rel="stylesheet" href="assets/stylesheets/main.79e020e9.min.css">
-      
-        
-        <link rel="stylesheet" href="assets/stylesheets/palette.a5377069.min.css">
-      
-      
-
-
-    
-    
-      
-    
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-      <link rel="stylesheet" href="assets/css/extra.css">
-    
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-  
-
-
-  
-  
-
-<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QHSJC6QMQX"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QHSJC6QMQX",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QHSJC6QMQX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
-  
-    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
-  
-
-    
-    
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Locus Engine</title>
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
   </head>
-  
-  
+
+  <body>
     
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo">
-  
-    
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
+    <div id="center-container">
+
+      <h1 id="Title">Locus <br> Game Engine</h1>
+      <h2 id="Description">Locus is a free and open-source game engine aimed to be lightweight, general-purpose, and easy to use.</h2>
+      
+      <svg id="Nav" viewBox="0 0 1229.19 298.36">
+        <g id="Grid">
+            <path class="cls-7" d="m614.6,33.55l-68.05-16.52L614.6.51l68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m682.65,50.07l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m750.7,66.59l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m818.76,83.11l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m886.81,99.62l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m954.86,116.14l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m1022.91,132.66l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m1090.96,149.18l-68.05-16.52,68.05-16.52,68.06,16.52-68.06,16.52Z"/>
+            <path class="cls-7" d="m1159.02,165.7l-68.06-16.52,68.06-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m546.54,50.07l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m614.6,66.59l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m682.65,83.11l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m750.7,99.62l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m818.76,116.14l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m886.81,132.66l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m954.86,149.18l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m1022.91,165.7l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m1090.96,182.22l-68.05-16.52,68.05-16.52,68.06,16.52-68.06,16.52Z"/>
+            <path class="cls-7" d="m478.49,66.59l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m546.54,83.11l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m614.6,99.62l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m682.65,116.14l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m750.7,132.66l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m818.76,149.18l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m886.81,165.7l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m954.86,182.22l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m1022.97,198.77l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m410.44,83.11l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m478.49,99.62l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m546.54,116.14l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m614.6,132.66l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m682.65,149.18l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m750.7,165.7l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m818.76,182.22l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m886.81,198.74l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m954.86,215.25l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m342.38,99.62l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m410.44,116.14l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m478.49,132.66l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m546.54,149.18l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m614.6,165.7l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m682.65,182.22l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m750.7,198.74l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m818.76,215.25l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m886.81,231.77l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m274.33,116.14l-68.06-16.52,68.06-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m342.38,132.66l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m410.44,149.18l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m478.49,165.7l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m546.54,182.22l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m614.6,198.74l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m682.65,215.25l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m750.7,231.77l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m818.76,248.29l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m206.28,132.66l-68.05-16.52,68.05-16.52,68.06,16.52-68.06,16.52Z"/>
+            <path class="cls-7" d="m274.33,149.18l-68.06-16.52,68.06-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m342.38,165.7l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m410.44,182.22l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m478.49,198.74l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m546.54,215.25l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m614.6,231.77l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m682.65,248.29l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m750.7,264.81l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m138.22,149.18l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m206.28,165.7l-68.05-16.52,68.05-16.52,68.06,16.52-68.06,16.52Z"/>
+            <path class="cls-7" d="m274.33,182.22l-68.06-16.52,68.06-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m342.38,198.74l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m410.44,215.25l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m478.49,231.77l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m546.54,248.29l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m614.6,264.81l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m682.65,281.33l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m70.17,165.7L2.12,149.18l68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m138.22,182.22l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m206.28,198.74l-68.05-16.52,68.05-16.52,68.06,16.52-68.06,16.52Z"/>
+            <path class="cls-7" d="m274.33,215.25l-68.06-16.52,68.06-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m342.38,231.77l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m410.44,248.29l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m478.49,264.81l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m546.54,281.33l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+            <path class="cls-7" d="m614.6,297.85l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+        </g>
+        <g id="HomeBlock" class="Block" onclick="window.location='index.html';">
+          <path class="cls-1" d="m206.28,126.66l-68.05-16.52,68.05-16.52,68.05,16.52-68.05,16.52Z"/>
+          <polygon class="cls-1" points="138.23 110.14 138.23 149.18 206.28 165.7 206.28 126.66 138.23 110.14"/>
+          <polygon class="cls-1" points="274.33 110.14 274.33 149.18 206.28 165.7 206.28 126.66 274.33 110.14"/>
+          <text class="cls-1" transform="translate(142.91 138.36) rotate(13.78) scale(1.03 .97) skewX(13.03)"><tspan x="0" y="0">Home</tspan></text>
+        </g>
+        <g id="AboutBlock" class="Block" onclick="window.location='Pages/About/Introduction';">
+          <path class="cls-1" d="m342.39,170.96l-68.05-16.52,136.1-33.03,68.05,16.52-136.1,33.04Z"/>
+          <polygon class="cls-1" points="274.33 154.44 274.33 182.22 342.39 198.74 342.39 170.96 274.33 154.44"/>
+          <polygon class="cls-1" points="478.48 137.92 478.48 165.7 342.39 198.74 342.39 170.96 478.48 137.92"/>
+          <text class="cls-1" transform="translate(282.2 176.79) rotate(13.71) scale(1.03 .97) skewX(12.97)"><tspan x="0" y="0">About</tspan></text>
+        </g>
+        <g id="DocumentationBlock" class="Block" onclick="window.location='Pages/Documentation/Introduction';">
+          <polygon class="cls-1" points="614.6 217.88 410.44 168.33 614.6 118.77 818.76 168.33 614.6 217.88"/>
+          <polygon class="cls-1" points="410.44 215.25 410.44 168.33 614.6 217.88 614.6 264.81 410.44 215.25"/>
+          <polygon class="cls-1" points="818.76 215.25 614.6 264.81 614.6 217.88 818.76 168.33 818.76 215.25"/>
+          <text class="cls-1" transform="translate(425.56 204.25) rotate(13.67) scale(1.03 .97) skewX(12.94)"><tspan x="0" y="0">Documentation</tspan></text>
+        </g>
+        <g id="GettingStartedBlock" class="Block" onclick="window.location='Pages/GettingStarted/Introduction';">
+          <polygon class="cls-1" points="546.55 77.03 682.65 43.99 614.6 27.47 546.55 43.99 478.5 27.47 410.44 43.99 546.55 77.03"/>
+          <polygon class="cls-1" points="410.44 43.99 410.44 83.11 546.54 116.14 546.55 77.03 410.44 43.99"/>
+          <polygon class="cls-1" points="682.65 43.99 682.65 83.11 546.54 116.14 546.55 77.03 682.65 43.99"/>
+          <text class="cls-1" transform="translate(413.71 70.91) rotate(13.64) scale(1.03 .97) skewX(12.91)"><tspan x="0" y="0">Getting Started</tspan></text>
+        </g>
+        <g id="GitHubBlock" onclick="window.open('https://github.com/kyenel64/locus-engine', '_blank').focus();" class="Block">
+          <polygon class="cls-1" points="750.7 68.09 845.28 45.14 750.7 22.18 656.13 45.14 750.7 68.09"/>
+          <polygon class="cls-1" points="656.13 109.71 656.13 45.14 750.7 68.09 750.7 132.66 656.13 109.71"/>
+          <polygon class="cls-1" points="845.28 109.71 750.7 132.66 750.7 68.09 845.28 45.14 845.28 109.71"/>
+          <text class="cls-1" transform="translate(663.82 88.03) rotate(13.61) scale(1.03 .97) skewX(12.88)"><tspan x="0" y="0">GitHub</tspan></text>
+        </g>
+        <g id="ContactBlock" class="Block">
+          <polygon class="cls-1" points="954.86 149.18 1022.97 132.7 886.81 99.62 818.76 116.14 954.86 149.18"/>
+          <polygon class="cls-1" points="818.76 149.18 818.76 116.14 954.86 149.18 954.86 182.22 818.76 149.18"/>
+          <polygon class="cls-1" points="1022.97 165.73 1022.97 132.7 954.86 149.18 954.86 182.22 1022.97 165.73"/>
+          <text class="cls-1" transform="translate(841.42 146.92) rotate(13.63) scale(1.03 .97) skewX(12.9)"><tspan x="0" y="0">Contact</tspan></text>
+        </g>
+      </svg>
+
+      <h2 id="Description2">Locus is still in early stages of development. Progress can be tracked <a onclick="window.open('https://trello.com/b/NNDPkCjF/locus-kanban', '_blank').focus();">here</a>.</h2>
+
+      <div id="DownloadButton"><a onclick="window.open('https://github.com/Kyenel64/Locus-Engine/releases', '_blank').focus();">Download</a></div>
+      <a id="BuildButton" onclick="window.location='Pages/GettingStarted/HowToBuild';">Build From <br> Source</a>
       
     </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
-
-  
-
-<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Locus Game Engine" class="md-header__button md-logo" aria-label="Locus Game Engine" data-md-component="logo">
-      
-  <img src="Resources/LocusLogo_Border.png" alt="logo">
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
-            Locus Game Engine
-          </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-              Home
-            
-          </span>
-        </div>
-      </div>
-    </div>
-    
-      
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
-    
-      <div class="md-header__source">
-        <a href="https://github.com/Kyenel64/Locus-Engine" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
-  </div>
-  <div class="md-source__repository">
-    Locus-Engine
-  </div>
-</a>
-      </div>
-    
-  </nav>
-  
-    
-      
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-    
-  
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
-        
-  
-    
-  
-  Home
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="About/Introduction/" class="md-tabs__link">
-          
-  
-  About
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="Getting_Started/Introduction/" class="md-tabs__link">
-          
-  
-  Getting Started
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="Documentation/Introduction/" class="md-tabs__link">
-          
-  
-  Documentation
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ul>
-  </div>
-</nav>
-    
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-    
-        
-      
-	<!--
-      Escape Velocity by HTML5 UP
-      html5up.net | @ajlkn
-      Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-    -->
-    <html>
-	<head>
-		<title>Locus Game Engine</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/sass/main.css" />
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
-
-			<!-- Header -->
-				<section id="header" class="wrapper">
-					<!-- Logo -->
-						<div id="logo">
-							<h1><img id="HeaderLogo" src="Resources/LocusLogoWithName.png" href="index.html"></img></h1>
-							<p>A lightweight and general-purpose game engine</p>
-							<ul class="actions">
-								<li><a href="https://github.com/Kyenel64/Locus-Engine" target="_blank" class="button style3 large">Github</a></li>
-								<li><a href="../Documentation/Introduction" class="button style3 large">Documentation</a></li>
-							</ul>
-						</div>
-				</section>
-
-			<!-- Intro -->
-				<section id="intro" class="wrapper style1">
-					<div class="title">About Locus</div>
-					<div class="container">
-						<p class="style1">
-							Locus is a free and open-source game engine aimed to be lightweight, general-purpose, and easy to use. <br>
-							With its ECS-based architecture and C# scripting system, the workflow is similar to popular engines like Unity.
-						</p>
-						<p class="style2">
-							Locus is still in early stages of development. Progress can be tracked
-						</p>
-						<p class="style3">
-
-						</p>
-						
-					</div>
-				</section>
-
-			<!-- Main -->
-				<section id="main" class="wrapper style2">
-					<div class="title">Documentation</div>
-					<div class="container">
-
-						<!-- Image -->
-							<a href="#" class="image featured">
-								<img src="images/pic01.jpg" alt="" />
-							</a>
-
-						<!-- Features -->
-							<section id="features">
-								<header class="style1">
-									<h2>Dolor consequat feugiat amet veroeros</h2>
-									<p>Feugiat dolor nullam orci pretium phasellus justo</p>
-								</header>
-								<div class="feature-list">
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon fa-comment">Mattis velit diam vulputate</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon solid fa-sync">Lorem ipsum dolor sit veroeros</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon fa-image">Pretium phasellus justo lorem</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon solid fa-cog">Tempus sed pretium orci</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon solid fa-wrench">Aliquam consequat et feugiat</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon solid fa-check">Dolore laoreet aliquam mattis</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-											</section>
-										</div>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li><a href="#" class="button style1 large">Get Started</a></li>
-									<li><a href="#" class="button style2 large">More Info</a></li>
-								</ul>
-							</section>
-
-					</div>
-				</section>
-
-			<!-- Highlights -->
-				<section id="highlights" class="wrapper style3">
-					<div class="title">The Endorsements</div>
-					<div class="container">
-						<div class="row aln-center">
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-									<h3><a href="#">Aliquam diam consequat</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Mattis tempus lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</div>
-				</section>
-
-			<!-- Footer -->
-				<section id="footer" class="wrapper">
-					<div class="title">The Rest Of It</div>
-					<div class="container">
-						<header class="style1">
-							<h2>Ipsum sapien elementum portitor?</h2>
-							<p>
-								Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br />
-								Nam pharetra laoreet imperdiet volutpat etiam feugiat.
-							</p>
-						</header>
-						<div class="row">
-							<div class="col-6 col-12-medium">
-
-								<!-- Contact Form -->
-									<section>
-										<form method="post" action="#">
-											<div class="row gtr-50">
-												<div class="col-6 col-12-small">
-													<input type="text" name="name" id="contact-name" placeholder="Name" />
-												</div>
-												<div class="col-6 col-12-small">
-													<input type="text" name="email" id="contact-email" placeholder="Email" />
-												</div>
-												<div class="col-12">
-													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" class="style1" value="Send" /></li>
-														<li><input type="reset" class="style2" value="Reset" /></li>
-													</ul>
-												</div>
-											</div>
-										</form>
-									</section>
-
-							</div>
-							<div class="col-6 col-12-medium">
-
-								<!-- Contact -->
-									<section class="feature-list small">
-										<div class="row">
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-home">Mailing Address</h3>
-													<p>
-														Untitled Corp<br />
-														1234 Somewhere Rd<br />
-														Nashville, TN 00000
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-comment">Social</h3>
-													<p>
-														<a href="#">@untitled-corp</a><br />
-														<a href="#">linkedin.com/untitled</a><br />
-														<a href="#">facebook.com/untitled</a>
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-envelope">Email</h3>
-													<p>
-														<a href="#">info@untitled.tld</a>
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-phone">Phone</h3>
-													<p>
-														(000) 555-0000
-													</p>
-												</section>
-											</div>
-										</div>
-									</section>
-
-							</div>
-						</div>
-						<div id="copyright">
-							<ul>
-								<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
-  
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-  
-
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="." title="Locus Game Engine" class="md-nav__button md-logo" aria-label="Locus Game Engine" data-md-component="logo">
-      
-  <img src="Resources/LocusLogo_Border.png" alt="logo">
-
-    </a>
-    Locus Game Engine
-  </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/Kyenel64/Locus-Engine" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
-  </div>
-  <div class="md-source__repository">
-    Locus-Engine
-  </div>
-</a>
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Home
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    
-    
-    
-    
-    
-      
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    About
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            About
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="About/Introduction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    
-    
-    
-    
-    
-      
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Getting Started
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Getting Started
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Getting_Started/Introduction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Getting_Started/HowToBuild/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to Build
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Getting_Started/Workflow/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Workflow
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Getting_Started/ExampleProject_SolarSystem/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Example Project - Solar System
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    
-    
-    
-    
-    
-      
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Documentation
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Documentation
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Documentation/Introduction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Classes
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_2">
-            <span class="md-nav__icon md-icon"></span>
-            Classes
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Documentation/Classes/Component/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Component
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Documentation/Classes/Entity/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Entity
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Documentation/Classes/Vec3/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Vec3
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-              </article>
-            </div>
-          
-          
-        </div>
-        
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-  Back to top
-</button>
-        
-      </main>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
-    
-    
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.top"], "search": "assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-    
-    
-      <script src="assets/javascripts/bundle.6eac0284.min.js"></script>
-      
     
   </body>
 </html>

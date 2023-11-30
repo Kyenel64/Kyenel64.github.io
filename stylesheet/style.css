@@ -1,0 +1,203 @@
+body {
+  background-color: #1B1B1B;
+  background-image: url("../Resources/grain.png");
+  color: #C0BAB3;
+  font-family: Inter;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: -0.1em;
+  cursor: default;
+}
+
+canvas {
+  position: absolute;
+  width: 70em;
+  height: 20em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#center-container {
+  position: absolute;
+  width: 70em;
+  height: 20em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#Title {
+  transform-origin: bottom left;
+  font-size: 5em;
+  position: absolute;
+  margin: 0;
+  transform: skew(-14.5deg) rotate(-14.5deg);
+  width: 48.5%;
+  height: 63%;
+  bottom: 50%;
+}
+
+#Description {
+  font-size: 2em;
+  color: #C0BAB3;
+  transform-origin: bottom right;
+  position: absolute;
+  margin: 0;
+  padding-bottom: 15px;
+  transform: skew(14.5deg) rotate(14.5deg);
+  width: 48.5%;
+  bottom: 50%;
+  right: 0;
+}
+
+#Description2 {
+  font-size: 2em;
+  color: #8D8D8D;
+  transform-origin: top left;
+  position: absolute;
+  margin: 0;
+  padding-top: 15px;
+  transform: skew(14.5deg) rotate(14.5deg);
+  top: 50%;
+  width: 48.5%;
+  backface-visibility: hidden;
+}
+#Description2 a {
+  text-decoration: none;
+  color: #9C6029;
+  transition: ease-in-out 300ms;
+}
+#Description2 a:hover {
+  color: #d8873b;
+  cursor: pointer;
+  transition: ease-in-out 300ms;
+}
+
+#DownloadButton {
+  font-size: 3em;
+  color: #8D8D8D;
+  transform-origin: bottom right;
+  position: absolute;
+  margin: 0;
+  padding-top: 10px;
+  transform: skew(-14.5deg) rotate(-14.5deg);
+  top: 50%;
+  right: 0;
+  width: 48.5%;
+}
+#DownloadButton a {
+  transition: ease-in-out 300ms;
+}
+#DownloadButton a:hover {
+  cursor: pointer;
+  color: #9C6029;
+  transition: ease-in-out 300ms;
+}
+
+#BuildButton {
+  font-size: 3em;
+  color: #8D8D8D;
+  transform-origin: bottom right;
+  position: absolute;
+  margin: 0;
+  padding-top: 10px;
+  transform: skew(-14.5deg) rotate(-14.5deg);
+  top: 50%;
+  right: 0;
+  width: 23.5%;
+  transition: ease-in-out 300ms;
+}
+
+#BuildButton:hover {
+  cursor: pointer;
+  color: #9C6029;
+  transition: ease-in-out 300ms;
+}
+
+#Nav {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+}
+
+#Grid {
+  fill: none;
+  stroke: #555555;
+  stroke-miterlimit: 10;
+}
+
+.Block {
+  background-color: blue;
+  pointer-events: none;
+  position: absolute;
+  fill: #C0BAB3;
+  stroke: #1B1B1B;
+  stroke-miterlimit: 10;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: ease-in-out 300ms;
+}
+.Block text {
+  fill: #1B1B1B;
+  font-size: 21px;
+  letter-spacing: -0.02em;
+  font-weight: normal;
+}
+
+.cls-1 {
+  pointer-events: auto;
+}
+
+.Block:hover {
+  transition: ease-in-out 300ms;
+  transform: translateY(-5px);
+  filter: brightness(130%);
+  cursor: pointer;
+}
+
+#HomeBlock {
+  fill: #A6C587;
+}
+
+#AboutBlock {
+  fill: #51AC8A;
+}
+#AboutBlock text {
+  font-size: 18px;
+}
+
+#DocumentationBlock {
+  fill: #20375D;
+}
+#DocumentationBlock text {
+  fill: #C0BAB3;
+  stroke: #C0BAB3;
+  font-size: 24px;
+}
+
+#GettingStartedBlock {
+  fill: #781428;
+}
+#GettingStartedBlock text {
+  fill: #C0BAB3;
+  stroke: #C0BAB3;
+  font-size: 18px;
+}
+
+#GitHubBlock {
+  fill: #D04727;
+}
+#GitHubBlock text {
+  font-size: 24px;
+  letter-spacing: -0.03em;
+}
+
+#ContactBlock {
+  fill: #D79100;
+}
+#ContactBlock text {
+  font-size: 24px;
+}/*# sourceMappingURL=style.css.map */
