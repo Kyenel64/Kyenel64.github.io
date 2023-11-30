@@ -1,8 +1,19 @@
-$color-black: #1B1B1B;
+$color-black: #161616;
 $color-white: #C0BAB3;
 $color-lightGrey: #8D8D8D;
 $color-grey: #555555;
 $color-orange: #9C6029;
+
+// breakpoints
+$screen-sm-min: 576px;
+$screen-md-min: 900px;
+$screen-lg-min: 1400px;
+$screen-xl-min: 2000px;
+
+@mixin sm { @media (min-width: #{$screen-sm-min}) { @content; } }
+@mixin md { @media (min-width: #{$screen-md-min}) { @content; } }
+@mixin lg { @media (min-width: #{$screen-lg-min}) { @content; } }
+@mixin xl { @media (min-width: #{$screen-xl-min}) { @content; } }
 
 body
 {
@@ -12,8 +23,28 @@ body
     font-family: Inter;
     font-weight: bold;
     margin: 0;
-    letter-spacing: -0.1em;
+    letter-spacing: -0.02em;
     cursor: default;
+
+    @include sm
+    {
+        letter-spacing: -0.05em;
+    }
+
+    @include md
+    {
+        letter-spacing: -0.08em;
+    }
+
+    @include lg
+    {
+        letter-spacing: -0.1em;
+    }
+
+    @include xl
+    {
+        letter-spacing: -0.1em;
+    }
 }
 
 canvas
@@ -30,50 +61,110 @@ canvas
 {
     //background-color: pink;
     position: absolute;
-    width: 70em;
+    width: 20em;
     height: 20em;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include sm
+    {
+        width: 30em;
+    }
+
+    @include md
+    {
+        width: 50em;
+    }
+
+    @include lg
+    {
+        width: 70em;
+    }
+
+    @include xl
+    {
+        width: 90em;
+    }
 }
 
 #Title
 {
     //background-color: blue;
     transform-origin: bottom left;
-    font-size: 5em;
+    font-size: 1.5em;
     position: absolute;
     margin: 0;
     transform: skew(-14.5deg) rotate(-14.5deg);
     width: 48.5%;
-    height: 63%;
     bottom: 50%;
+    padding-bottom: 0.1em;
+
+    @include sm
+    {
+        font-size: 2.3em;
+    }
+
+    @include md
+    {
+        font-size: 3.9em;
+    }
+
+    @include lg
+    {
+        font-size: 5.4em;
+    }
+
+    @include xl
+    {
+        font-size: 7em;
+    }
 }
 
 #Description
 {
     //background-color: red;
-    font-size: 2em;
+    font-size: 0.5em;
     color: $color-white;
     transform-origin: bottom right;
     position: absolute;
     margin: 0;
-    padding-bottom: 15px;
+    padding-bottom: 0.8em;
     transform: skew(14.5deg) rotate(14.5deg);
     width: 48.5%;
     bottom: 50%;
     right: 0;
+
+    @include sm
+    {
+        font-size: 0.9em;
+    }
+
+    @include md
+    {
+        font-size: 1.5em;
+    }
+
+    @include lg
+    {
+        font-size: 2em;
+    }
+
+    @include xl
+    {
+        font-size: 2.5em;
+    }
 }
 
 #Description2
 {
     //background-color: blue;
-    font-size: 2em;
+    font-size: 0.6em;
     color: $color-lightGrey;
     transform-origin: top left;
     position: absolute;
     margin: 0;
-    padding-top: 15px;
+    padding-top: 0.8px;
     transform: skew(14.5deg) rotate(14.5deg);
     top: 50%;
     width: 48.5%;
@@ -92,17 +183,37 @@ canvas
         cursor: pointer;
         transition: ease-in-out 300ms;
     }
+
+    @include sm
+    {
+        font-size: 0.9em;
+    }
+
+    @include md
+    {
+        font-size: 1.5em;
+    }
+
+    @include lg
+    {
+        font-size: 2em;
+    }
+
+    @include xl
+    {
+        font-size: 2.5em;
+    }
 }
 
 #DownloadButton
 {
     //background-color: blue;
-    font-size: 3em;
+    font-size: 0.9em;
     color: $color-lightGrey;
     transform-origin: bottom right;
     position: absolute;
     margin: 0;
-    padding-top: 10px;
+    padding-top: 0.8em;
     transform: skew(-14.5deg) rotate(-14.5deg);
     top: 50%;
     right: 0;
@@ -110,6 +221,8 @@ canvas
 
     a
     {
+        position: absolute;
+        top: 0;
         transition: ease-in-out 300ms;
     }
 
@@ -119,29 +232,75 @@ canvas
         color: $color-orange;
         transition: ease-in-out 300ms;
     }
+
+    @include sm
+    {
+        font-size: 1.3em;
+    }
+
+    @include md
+    {
+        font-size: 2.3em;
+    }
+
+    @include lg
+    {
+        font-size: 3.2em;
+    }
+
+    @include xl
+    {
+        font-size: 4em;
+    }
 }
 
 #BuildButton
 {
     //background-color: blue;
-    font-size: 3em;
+    font-size: 0.9em;
     color: $color-lightGrey;
     transform-origin: bottom right;
     position: absolute;
     margin: 0;
-    padding-top: 10px;
+    padding-top: 0.8em;
     transform: skew(-14.5deg) rotate(-14.5deg);
     top: 50%;
     right: 0;
     width: 23.5%;
-    transition: ease-in-out 300ms;
-}
 
-#BuildButton:hover
-{
-    cursor: pointer;
-    color: $color-orange;
-    transition: ease-in-out 300ms;
+    a
+    {
+        position: absolute;
+        top: 0;
+        transition: ease-in-out 300ms;
+    }
+
+    a:hover
+    {
+        cursor: pointer;
+        color: $color-orange;
+        transition: ease-in-out 300ms;
+    }
+
+    @include sm
+    {
+        font-size: 1.3em;
+    }
+
+    @include md
+    {
+        font-size: 2.3em;
+    }
+
+    @include lg
+    {
+        font-size: 3.2em;
+    }
+
+    @include xl
+    {
+        font-size: 4em;
+    }
 }
 
 #Nav
@@ -152,6 +311,76 @@ canvas
     top: 50%;
     left: 50%;
     width: 100%;
+}
+
+@keyframes slideInFromLeft 
+{
+    0% 
+    {
+      transform: translate(-20%, -20%);
+      opacity: 0;
+    }
+    100% 
+    {
+      transform: translate(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop 
+{
+    0% 
+    {
+      transform: translateY(-20%);
+      opacity: 0;
+    }
+    100% 
+    {
+      transform: translate(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight
+{
+    0% 
+    {
+      transform: translate(20%, 20%);
+      opacity: 0;
+    }
+    100% 
+    {
+      transform: translate(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slideInFromBack
+{
+    0% 
+    {
+      transform: translate(20%, -20%);
+      opacity: 0;
+    }
+    100% 
+    {
+      transform: translate(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slideInFromFront
+{
+    0% 
+    {
+      transform: translate(-20%, 20%);
+      opacity: 0;
+    }
+    100% 
+    {
+      transform: translate(0);
+      opacity: 1;
+    }
 }
 
 #Grid
@@ -195,13 +424,16 @@ canvas
     cursor: pointer;
 }
 
+
 #HomeBlock
 {
+    animation: 1s ease-in-out 0s 1 slideInFromLeft;
     fill: #A6C587;
 }
 
 #AboutBlock
 {
+    animation: 1s ease-in-out 0s 1 slideInFromFront;
     fill: #51AC8A;
     text
     {
@@ -211,6 +443,7 @@ canvas
 
 #DocumentationBlock
 {
+    animation: 1s ease-in-out 0s 1 slideInFromRight;
     fill: #20375D;
     text
     {
@@ -222,6 +455,7 @@ canvas
 
 #GettingStartedBlock
 {
+    animation: 1s ease-in-out 0s 1 slideInFromTop;
     fill: #781428;
     text
     {
@@ -233,6 +467,7 @@ canvas
 
 #GitHubBlock
 {
+    animation: 1s ease-in-out 0s 1 slideInFromBack;
     fill: #D04727;
     text
     {
@@ -243,6 +478,7 @@ canvas
 
 #ContactBlock
 {
+    animation: 1s ease-in-out 0s 1 slideInFromRight;
     fill: #D79100;
     text
     {
