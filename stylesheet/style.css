@@ -1,12 +1,32 @@
 body {
-  background-color: #1B1B1B;
+  background-color: #161616;
   background-image: url("../Resources/grain.png");
   color: #C0BAB3;
   font-family: Inter;
   font-weight: bold;
   margin: 0;
-  letter-spacing: -0.1em;
+  letter-spacing: -0.02em;
   cursor: default;
+}
+@media (min-width: 576px) {
+  body {
+    letter-spacing: -0.05em;
+  }
+}
+@media (min-width: 900px) {
+  body {
+    letter-spacing: -0.08em;
+  }
+}
+@media (min-width: 1400px) {
+  body {
+    letter-spacing: -0.1em;
+  }
+}
+@media (min-width: 2000px) {
+  body {
+    letter-spacing: -0.1em;
+  }
 }
 
 canvas {
@@ -20,44 +40,104 @@ canvas {
 
 #center-container {
   position: absolute;
-  width: 70em;
+  width: 20em;
   height: 20em;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media (min-width: 576px) {
+  #center-container {
+    width: 30em;
+  }
+}
+@media (min-width: 900px) {
+  #center-container {
+    width: 50em;
+  }
+}
+@media (min-width: 1400px) {
+  #center-container {
+    width: 70em;
+  }
+}
+@media (min-width: 2000px) {
+  #center-container {
+    width: 90em;
+  }
+}
 
 #Title {
   transform-origin: bottom left;
-  font-size: 5em;
+  font-size: 1.5em;
   position: absolute;
   margin: 0;
   transform: skew(-14.5deg) rotate(-14.5deg);
   width: 48.5%;
-  height: 63%;
   bottom: 50%;
+  padding-bottom: 0.1em;
+}
+@media (min-width: 576px) {
+  #Title {
+    font-size: 2.3em;
+  }
+}
+@media (min-width: 900px) {
+  #Title {
+    font-size: 3.9em;
+  }
+}
+@media (min-width: 1400px) {
+  #Title {
+    font-size: 5.4em;
+  }
+}
+@media (min-width: 2000px) {
+  #Title {
+    font-size: 7em;
+  }
 }
 
 #Description {
-  font-size: 2em;
+  font-size: 0.5em;
   color: #C0BAB3;
   transform-origin: bottom right;
   position: absolute;
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 0.8em;
   transform: skew(14.5deg) rotate(14.5deg);
   width: 48.5%;
   bottom: 50%;
   right: 0;
 }
+@media (min-width: 576px) {
+  #Description {
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 900px) {
+  #Description {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 1400px) {
+  #Description {
+    font-size: 2em;
+  }
+}
+@media (min-width: 2000px) {
+  #Description {
+    font-size: 2.5em;
+  }
+}
 
 #Description2 {
-  font-size: 2em;
+  font-size: 0.6em;
   color: #8D8D8D;
   transform-origin: top left;
   position: absolute;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 0.8px;
   transform: skew(14.5deg) rotate(14.5deg);
   top: 50%;
   width: 48.5%;
@@ -73,20 +153,42 @@ canvas {
   cursor: pointer;
   transition: ease-in-out 300ms;
 }
+@media (min-width: 576px) {
+  #Description2 {
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 900px) {
+  #Description2 {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 1400px) {
+  #Description2 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 2000px) {
+  #Description2 {
+    font-size: 2.5em;
+  }
+}
 
 #DownloadButton {
-  font-size: 3em;
+  font-size: 0.9em;
   color: #8D8D8D;
   transform-origin: bottom right;
   position: absolute;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 0.8em;
   transform: skew(-14.5deg) rotate(-14.5deg);
   top: 50%;
   right: 0;
   width: 48.5%;
 }
 #DownloadButton a {
+  position: absolute;
+  top: 0;
   transition: ease-in-out 300ms;
 }
 #DownloadButton a:hover {
@@ -94,25 +196,68 @@ canvas {
   color: #9C6029;
   transition: ease-in-out 300ms;
 }
+@media (min-width: 576px) {
+  #DownloadButton {
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 900px) {
+  #DownloadButton {
+    font-size: 2.3em;
+  }
+}
+@media (min-width: 1400px) {
+  #DownloadButton {
+    font-size: 3.2em;
+  }
+}
+@media (min-width: 2000px) {
+  #DownloadButton {
+    font-size: 4em;
+  }
+}
 
 #BuildButton {
-  font-size: 3em;
+  font-size: 0.9em;
   color: #8D8D8D;
   transform-origin: bottom right;
   position: absolute;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 0.8em;
   transform: skew(-14.5deg) rotate(-14.5deg);
   top: 50%;
   right: 0;
   width: 23.5%;
+}
+#BuildButton a {
+  position: absolute;
+  top: 0;
   transition: ease-in-out 300ms;
 }
-
-#BuildButton:hover {
+#BuildButton a:hover {
   cursor: pointer;
   color: #9C6029;
   transition: ease-in-out 300ms;
+}
+@media (min-width: 576px) {
+  #BuildButton {
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 900px) {
+  #BuildButton {
+    font-size: 2.3em;
+  }
+}
+@media (min-width: 1400px) {
+  #BuildButton {
+    font-size: 3.2em;
+  }
+}
+@media (min-width: 2000px) {
+  #BuildButton {
+    font-size: 4em;
+  }
 }
 
 #Nav {
@@ -123,6 +268,56 @@ canvas {
   width: 100%;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translate(-20%, -20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translate(20%, 20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromBack {
+  0% {
+    transform: translate(20%, -20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromFront {
+  0% {
+    transform: translate(-20%, 20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
 #Grid {
   fill: none;
   stroke: #555555;
@@ -134,14 +329,14 @@ canvas {
   pointer-events: none;
   position: absolute;
   fill: #C0BAB3;
-  stroke: #1B1B1B;
+  stroke: #161616;
   stroke-miterlimit: 10;
   stroke-linecap: round;
   stroke-linejoin: round;
   transition: ease-in-out 300ms;
 }
 .Block text {
-  fill: #1B1B1B;
+  fill: #161616;
   font-size: 21px;
   letter-spacing: -0.02em;
   font-weight: normal;
@@ -159,10 +354,12 @@ canvas {
 }
 
 #HomeBlock {
+  animation: 1s ease-in-out 0s 1 slideInFromLeft;
   fill: #A6C587;
 }
 
 #AboutBlock {
+  animation: 1s ease-in-out 0s 1 slideInFromFront;
   fill: #51AC8A;
 }
 #AboutBlock text {
@@ -170,6 +367,7 @@ canvas {
 }
 
 #DocumentationBlock {
+  animation: 1s ease-in-out 0s 1 slideInFromRight;
   fill: #20375D;
 }
 #DocumentationBlock text {
@@ -179,6 +377,7 @@ canvas {
 }
 
 #GettingStartedBlock {
+  animation: 1s ease-in-out 0s 1 slideInFromTop;
   fill: #781428;
 }
 #GettingStartedBlock text {
@@ -188,6 +387,7 @@ canvas {
 }
 
 #GitHubBlock {
+  animation: 1s ease-in-out 0s 1 slideInFromBack;
   fill: #D04727;
 }
 #GitHubBlock text {
@@ -196,6 +396,7 @@ canvas {
 }
 
 #ContactBlock {
+  animation: 1s ease-in-out 0s 1 slideInFromRight;
   fill: #D79100;
 }
 #ContactBlock text {
