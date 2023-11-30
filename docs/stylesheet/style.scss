@@ -1,0 +1,251 @@
+$color-black: #1B1B1B;
+$color-white: #C0BAB3;
+$color-lightGrey: #8D8D8D;
+$color-grey: #555555;
+$color-orange: #9C6029;
+
+body
+{
+    background-color: $color-black;
+    background-image: url("../Resources/grain.png");
+    color: $color-white;
+    font-family: Inter;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: -0.1em;
+    cursor: default;
+}
+
+canvas
+{
+    position: absolute;
+    width: 70em;
+    height: 20em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#center-container
+{
+    //background-color: pink;
+    position: absolute;
+    width: 70em;
+    height: 20em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Title
+{
+    //background-color: blue;
+    transform-origin: bottom left;
+    font-size: 5em;
+    position: absolute;
+    margin: 0;
+    transform: skew(-14.5deg) rotate(-14.5deg);
+    width: 48.5%;
+    height: 63%;
+    bottom: 50%;
+}
+
+#Description
+{
+    //background-color: red;
+    font-size: 2em;
+    color: $color-white;
+    transform-origin: bottom right;
+    position: absolute;
+    margin: 0;
+    padding-bottom: 15px;
+    transform: skew(14.5deg) rotate(14.5deg);
+    width: 48.5%;
+    bottom: 50%;
+    right: 0;
+}
+
+#Description2
+{
+    //background-color: blue;
+    font-size: 2em;
+    color: $color-lightGrey;
+    transform-origin: top left;
+    position: absolute;
+    margin: 0;
+    padding-top: 15px;
+    transform: skew(14.5deg) rotate(14.5deg);
+    top: 50%;
+    width: 48.5%;
+    backface-visibility: hidden;
+    
+    a
+    {
+        text-decoration: none;
+        color: #9C6029;
+        transition: ease-in-out 300ms;
+    }
+
+    a:hover
+    {
+        color: #d8873b;
+        cursor: pointer;
+        transition: ease-in-out 300ms;
+    }
+}
+
+#DownloadButton
+{
+    //background-color: blue;
+    font-size: 3em;
+    color: $color-lightGrey;
+    transform-origin: bottom right;
+    position: absolute;
+    margin: 0;
+    padding-top: 10px;
+    transform: skew(-14.5deg) rotate(-14.5deg);
+    top: 50%;
+    right: 0;
+    width: 48.5%;
+
+    a
+    {
+        transition: ease-in-out 300ms;
+    }
+
+    a:hover
+    {
+        cursor: pointer;
+        color: $color-orange;
+        transition: ease-in-out 300ms;
+    }
+}
+
+#BuildButton
+{
+    //background-color: blue;
+    font-size: 3em;
+    color: $color-lightGrey;
+    transform-origin: bottom right;
+    position: absolute;
+    margin: 0;
+    padding-top: 10px;
+    transform: skew(-14.5deg) rotate(-14.5deg);
+    top: 50%;
+    right: 0;
+    width: 23.5%;
+    transition: ease-in-out 300ms;
+}
+
+#BuildButton:hover
+{
+    cursor: pointer;
+    color: $color-orange;
+    transition: ease-in-out 300ms;
+}
+
+#Nav
+{
+    //background-color: blue;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+}
+
+#Grid
+{
+    fill: none;
+    stroke: $color-grey;
+    stroke-miterlimit: 10;
+}
+
+.Block
+{
+    background-color: blue;
+    pointer-events: none;
+    position: absolute;
+    fill: $color-white;
+    stroke: $color-black;
+    stroke-miterlimit: 10;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: ease-in-out 300ms;
+
+    text
+    {
+        fill: $color-black;
+        font-size: 21px;
+        letter-spacing: -.02em;
+        font-weight: normal;
+    }
+}
+
+.cls-1
+{
+    pointer-events: auto;
+}
+
+.Block:hover
+{
+    transition: ease-in-out 300ms;
+    transform: translateY(-5px);
+    filter: brightness(130%);
+    cursor: pointer;
+}
+
+#HomeBlock
+{
+    fill: #A6C587;
+}
+
+#AboutBlock
+{
+    fill: #51AC8A;
+    text
+    {
+        font-size: 18px;
+    }
+}
+
+#DocumentationBlock
+{
+    fill: #20375D;
+    text
+    {
+        fill: $color-white;
+        stroke: $color-white;
+        font-size: 24px;
+    }
+}
+
+#GettingStartedBlock
+{
+    fill: #781428;
+    text
+    {
+        fill: $color-white;
+        stroke: $color-white;
+        font-size: 18px;
+    }
+}
+
+#GitHubBlock
+{
+    fill: #D04727;
+    text
+    {
+        font-size: 24px;
+        letter-spacing: -.03em;
+    }
+}
+
+#ContactBlock
+{
+    fill: #D79100;
+    text
+    {
+        font-size: 24px;
+    }
+}

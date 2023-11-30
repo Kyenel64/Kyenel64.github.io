@@ -5,7 +5,7 @@ The engine is ECS-based and the scripting language is in C#, making it easier to
 
 ## Contribute
 Since Locus is only developed by one person, progress is not fast. If you would like to contribute to the development of the engine, I am always open to receive feedback. 
-Feel free to open an issue or pull request on the <a href = "https://github.com/kyenel64/Locus-Engine" style="color: #df8e4b" target="_blank">GitHub repository</a>.
+Feel free to open an issue or pull request on the <a href = "https://github.com/kyenel64/Locus-Engine" target="_blank">GitHub repository</a>.
 
 ## About Locus
 Locus initially started as a simple project for me to learn computer graphics and software architecture. 

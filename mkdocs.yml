@@ -1,7 +1,7 @@
 site_name: Locus Game Engine
 theme:
   palette:
-    scheme: slate
+    scheme: locus
     primary: custom
   name: material
   logo: 'Resources/LocusLogo_Border.png'
@@ -9,9 +9,7 @@ theme:
     - navigation.instant
     - navigation.instant.progress
     - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.top
-  custom_dir: docs/Custom/
   font:
     text: Inter
   favicon: img/logo.ico
@@ -20,7 +18,7 @@ repo_url: https://github.com/Kyenel64/Locus-Engine
 repo_name: Locus-Engine
 
 extra_css:
-  - assets/css/extra.css
+  - stylesheet/extra.css
 
 extra:
   analytics:
@@ -30,17 +28,17 @@ extra:
 
 # page tree
 nav:
-  - Home: index.md
+  - Home: index.html
   - About:
-    - Introduction: About/Introduction.md
+    - Introduction: Pages/About/Introduction.md
   - Getting Started:
-    - Introduction: Getting_Started/Introduction.md
-    - How to Build: Getting_Started/HowToBuild.md
-    - Workflow: Getting_Started/Workflow.md
-    - Example Project - Solar System: Getting_Started/ExampleProject_SolarSystem.md
+    - Introduction: Pages/GettingStarted/Introduction.md
+    - How to Build: Pages/GettingStarted/HowToBuild.md
+    - Workflow: Pages/GettingStarted/Workflow.md
+    - Example Project - Solar System: Pages/GettingStarted/ExampleProject_SolarSystem.md
   - Documentation:
-    - Introduction: Documentation/Introduction.md
+    - Introduction: Pages/Documentation/Introduction.md
     - Classes:
-      - Component: Documentation/Classes/Component.md
-      - Entity: Documentation/Classes/Entity.md
-      - Vec3: Documentation/Classes/Vec3.md
+      - Component: Pages/Documentation/Classes/Component.md
+      - Entity: Pages/Documentation/Classes/Entity.md
+      - Vec3: Pages/Documentation/Classes/Vec3.md

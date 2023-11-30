@@ -1,0 +1,42 @@
+[data-md-color-scheme="locus"]
+{
+    --md-primary-fg-color: #1B1B1B;
+    --md-primary-bg-color: #d1cbc7;
+
+    --md-default-fg-color: #d1cbc7;
+    --md-default-fg-color--light: #d1cbc7;
+    --md-default-bg-color: #1B1B1B;
+
+    --md-typeset-color: #d1cbc7;
+    --md-typeset-a-color: #9C6029;
+
+    --md-accent-fg-color: #9C6029;
+
+    --md-typeset-table-color: #8D8D8D;
+
+    --md-code-bg-color: #2c2c2c;
+    --md-code-fg-color: #d1cbc7;
+}
+
+body
+{
+    background-color: #1B1B1B;
+    /* background-image: url(../Resources/grain.png); */
+}
+
+.md-nav--secondary .md-nav__title
+{
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link
+{
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.md-footer-meta__inner
+{
+    display: none;
+}
