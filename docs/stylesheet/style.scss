@@ -1,8 +1,35 @@
-$color-black: #161616;
-$color-white: #C0BAB3;
-$color-lightGrey: #8D8D8D;
-$color-grey: #555555;
+// Variables
+$color-white: #d0cdcd;
+$color-grey: #4C4C4C;
+$color-black: #1B1B1B;
 $color-orange: #9C6029;
+
+// Animations
+@keyframes fadeIn 
+{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+// Mkdocs styling
+.md-header, .md-tabs
+{
+    box-shadow: none;
+    backdrop-filter: blur(3px);
+    background-color: transparent;
+}
+
+.md-tabs
+{
+    height: 100%;
+    font-weight: normal;
+}
+
+.md-sidebar
+{
+    display: none;
+}
+
 
 // breakpoints
 $screen-sm-min: 576px;
@@ -15,473 +42,261 @@ $screen-xl-min: 2000px;
 @mixin lg { @media (min-width: #{$screen-lg-min}) { @content; } }
 @mixin xl { @media (min-width: #{$screen-xl-min}) { @content; } }
 
+// --- Homepage styling ---
+html
+{
+    font-family: "Inter";
+    color: $color-white;
+    font-weight: bold;
+}
+
 body
 {
-    background-color: $color-black;
-    background-image: url("../Resources/grain.png");
-    color: $color-white;
-    font-family: Inter;
-    font-weight: bold;
-    margin: 0;
-    letter-spacing: -0.02em;
-    cursor: default;
+    background-color: rgb(11, 11, 11);
+    height: 100%;
+    display: flex;
+}
+
+h1
+{
+    font-size: 4.5em;
+    letter-spacing: -0.05em;
+    line-height: 0.9em;
 
     @include sm
     {
-        letter-spacing: -0.05em;
+        font-size: 6em;
     }
 
     @include md
-    {
-        letter-spacing: -0.08em;
-    }
-
-    @include lg
-    {
-        letter-spacing: -0.1em;
-    }
-
-    @include xl
-    {
-        letter-spacing: -0.1em;
-    }
-}
-
-canvas
-{
-    position: absolute;
-    width: 70em;
-    height: 20em;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#center-container
-{
-    //background-color: pink;
-    position: absolute;
-    width: 20em;
-    height: 20em;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    @include sm
-    {
-        width: 30em;
-    }
-
-    @include md
-    {
-        width: 50em;
-    }
-
-    @include lg
-    {
-        width: 70em;
-    }
-
-    @include xl
-    {
-        width: 90em;
-    }
-}
-
-#Title
-{
-    //background-color: blue;
-    transform-origin: bottom left;
-    font-size: 1.5em;
-    position: absolute;
-    margin: 0;
-    transform: skew(-14.5deg) rotate(-14.5deg);
-    width: 48.5%;
-    bottom: 50%;
-    padding-bottom: 0.1em;
-
-    @include sm
-    {
-        font-size: 2.3em;
-    }
-
-    @include md
-    {
-        font-size: 3.9em;
-    }
-
-    @include lg
-    {
-        font-size: 5.4em;
-    }
-
-    @include xl
     {
         font-size: 7em;
     }
 }
 
-#Description
+h2
 {
-    //background-color: red;
-    font-size: 0.5em;
+    font-size: 2em;
+
+    @include sm
+    {
+        font-size: 3em;
+    }
+
+    @include md
+    {
+        font-size: 3em;
+    }
+}
+
+p
+{
+    font-size: 1.2em;
+    font-weight: 500;
+
+    @include md
+    {
+        font-size: 1.5em;
+    }
+}
+
+button
+{
+    font-size: 2em;
     color: $color-white;
-    transform-origin: bottom right;
-    position: absolute;
-    margin: 0;
-    padding-bottom: 0.8em;
-    transform: skew(14.5deg) rotate(14.5deg);
-    width: 48.5%;
-    bottom: 50%;
-    right: 0;
-
-    @include sm
-    {
-        font-size: 0.9em;
-    }
-
-    @include md
-    {
-        font-size: 1.5em;
-    }
-
-    @include lg
-    {
-        font-size: 2em;
-    }
-
-    @include xl
-    {
-        font-size: 2.5em;
-    }
+    background-color: rgb(47, 47, 47);
+    backdrop-filter: blur(5px);
+    padding: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
 }
 
-#Description2
+
+#background
 {
-    //background-color: blue;
-    font-size: 0.6em;
-    color: $color-lightGrey;
-    transform-origin: top left;
     position: absolute;
-    margin: 0;
-    padding-top: 0.8px;
-    transform: skew(14.5deg) rotate(14.5deg);
-    top: 50%;
-    width: 48.5%;
-    backface-visibility: hidden;
-    
-    a
-    {
-        text-decoration: none;
-        color: #9C6029;
-        transition: ease-in-out 300ms;
-    }
-
-    a:hover
-    {
-        color: #d8873b;
-        cursor: pointer;
-        transition: ease-in-out 300ms;
-    }
-
-    @include sm
-    {
-        font-size: 0.9em;
-    }
-
-    @include md
-    {
-        font-size: 1.5em;
-    }
-
-    @include lg
-    {
-        font-size: 2em;
-    }
-
-    @include xl
-    {
-        font-size: 2.5em;
-    }
-}
-
-#DownloadButton
-{
-    //background-color: blue;
-    font-size: 0.9em;
-    color: $color-lightGrey;
-    transform-origin: bottom right;
-    position: absolute;
-    margin: 0;
-    padding-top: 0.8em;
-    transform: skew(-14.5deg) rotate(-14.5deg);
-    top: 50%;
-    right: 0;
-    width: 48.5%;
-
-    a
-    {
-        position: absolute;
-        top: 0;
-        transition: ease-in-out 300ms;
-    }
-
-    a:hover
-    {
-        cursor: pointer;
-        color: $color-orange;
-        transition: ease-in-out 300ms;
-    }
-
-    @include sm
-    {
-        font-size: 1.3em;
-    }
-
-    @include md
-    {
-        font-size: 2.3em;
-    }
-
-    @include lg
-    {
-        font-size: 3.2em;
-    }
-
-    @include xl
-    {
-        font-size: 4em;
-    }
-}
-
-#BuildButton
-{
-    //background-color: blue;
-    font-size: 0.9em;
-    color: $color-lightGrey;
-    transform-origin: bottom right;
-    position: absolute;
-    margin: 0;
-    padding-top: 0.8em;
-    transform: skew(-14.5deg) rotate(-14.5deg);
-    top: 50%;
-    right: 0;
-    width: 23.5%;
-
-    a
-    {
-        position: absolute;
-        top: 0;
-        transition: ease-in-out 300ms;
-    }
-
-    a:hover
-    {
-        cursor: pointer;
-        color: $color-orange;
-        transition: ease-in-out 300ms;
-    }
-
-    @include sm
-    {
-        font-size: 1.3em;
-    }
-
-    @include md
-    {
-        font-size: 2.3em;
-    }
-
-    @include lg
-    {
-        font-size: 3.2em;
-    }
-
-    @include xl
-    {
-        font-size: 4em;
-    }
-}
-
-#Nav
-{
-    //background-color: blue;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
     width: 100%;
-}
+    margin-top: -5%;
+    height: 60%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../Resources/editor.png") center center;
+    background-size: cover;
+    background-position-x: 100%;
+    background-position-y: 50%;
+    position: fixed;
+    z-index: -1;
 
-@keyframes slideInFromLeft 
-{
-    0% 
+    @include sm
     {
-      transform: translate(-20%, -20%);
-      opacity: 0;
+        height: 60%;
     }
-    100% 
-    {
-      transform: translate(0);
-      opacity: 1;
-    }
-}
 
-@keyframes slideInFromTop 
-{
-    0% 
+    @include md
     {
-      transform: translateY(-20%);
-      opacity: 0;
+        height: 100%;
     }
-    100% 
-    {
-      transform: translate(0);
-      opacity: 1;
-    }
-}
 
-@keyframes slideInFromRight
-{
-    0% 
+    @include lg
     {
-      transform: translate(20%, 20%);
-      opacity: 0;
+        height: 100%;
     }
-    100% 
+
+    @include xl
     {
-      transform: translate(0);
-      opacity: 1;
+        height: 100%;
     }
 }
 
-@keyframes slideInFromBack
+#landing
 {
-    0% 
-    {
-      transform: translate(20%, -20%);
-      opacity: 0;
-    }
-    100% 
-    {
-      transform: translate(0);
-      opacity: 1;
-    }
-}
+   // background-color: red;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
 
-@keyframes slideInFromFront
-{
-    0% 
+    @include sm
     {
-      transform: translate(-20%, 20%);
-      opacity: 0;
+        margin-left: 11%;
+        margin-right: 11%;
     }
-    100% 
+
+    @include md
     {
-      transform: translate(0);
-      opacity: 1;
+        margin-left: 20%;
+        margin-right: 20%;
     }
-}
 
-#Grid
-{
-    fill: none;
-    stroke: $color-grey;
-    stroke-miterlimit: 10;
-}
-
-.Block
-{
-    background-color: blue;
-    pointer-events: none;
-    position: absolute;
-    fill: $color-white;
-    stroke: $color-black;
-    stroke-miterlimit: 10;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    transition: ease-in-out 300ms;
-
-    text
+    p
     {
-        fill: $color-black;
-        font-size: 21px;
-        letter-spacing: -.02em;
-        font-weight: normal;
+        //background-color: blue;
+        margin: 0;
+        width: 100%;
+        font-weight: 500;
+        text-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
+
+        @include md
+        {
+            width: 50%;
+        }
+    }
+    
+    h1
+    {
+        //background-color: green;
+        margin: 0;
+        text-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
     }
 }
 
-.cls-1
+.twoButtons
 {
-    pointer-events: auto;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 
-.Block:hover
-{
-    transition: ease-in-out 300ms;
-    transform: translateY(-5px);
-    filter: brightness(130%);
-    cursor: pointer;
-}
-
-
-#HomeBlock
-{
-    animation: 1s ease-in-out 0s 1 slideInFromLeft;
-    fill: #A6C587;
-}
-
-#AboutBlock
-{
-    animation: 1s ease-in-out 0s 1 slideInFromFront;
-    fill: #51AC8A;
-    text
+    @include sm
     {
-        font-size: 18px;
+        flex-direction: row;
     }
 }
 
-#DocumentationBlock
+.orangeButton
 {
-    animation: 1s ease-in-out 0s 1 slideInFromRight;
-    fill: #20375D;
-    text
+    background-color: $color-orange;
+}
+
+.section
+{
+    //background-color: green;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    gap: 3em;
+    padding: 3em;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    @include md
     {
-        fill: $color-white;
-        stroke: $color-white;
-        font-size: 24px;
+        flex-direction: row;
     }
 }
 
-#GettingStartedBlock
+.box
 {
-    animation: 1s ease-in-out 0s 1 slideInFromTop;
-    fill: #781428;
-    text
+    background-color: rgb(69, 69, 69);
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
+
+    @include sm
     {
-        fill: $color-white;
-        stroke: $color-white;
-        font-size: 18px;
+        width: 80%;
+    }
+
+    @include md
+    {
+        width: 40%;
+    }
+
+    h2
+    {
+        margin: 0;
+    }
+
+    
+}
+
+#section1
+{
+    background-color: rgba(41, 41, 41, 0.5);
+
+    button
+    {
+        background-color: $color-orange;
     }
 }
 
-#GitHubBlock
+#section2
 {
-    animation: 1s ease-in-out 0s 1 slideInFromBack;
-    fill: #D04727;
-    text
+    background-color: rgba(105, 105, 105, 0.5);
+
+    .box
     {
-        font-size: 24px;
-        letter-spacing: -.03em;
+        background: none;
+        box-shadow: none;
+        padding: 0;
     }
 }
 
-#ContactBlock
+#section2Buttons
 {
-    animation: 1s ease-in-out 0s 1 slideInFromRight;
-    fill: #D79100;
-    text
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#section3
+{
+    text-align: center;
+    background-color: rgba(41, 41, 41, 0.5);
+    .box
     {
-        font-size: 24px;
+        background: none;
+        box-shadow: none;
     }
 }

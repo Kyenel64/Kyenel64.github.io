@@ -10,6 +10,7 @@ theme:
     - navigation.instant.progress
     - navigation.tabs
     - navigation.top
+  custom_dir: docs/Custom/
   font:
     text: Inter
   favicon: img/logo.ico
@@ -28,7 +29,7 @@ extra:
 
 # page tree
 nav:
-  - Home: index.html
+  - Home: index.md
   - About:
     - Introduction: Pages/About/Introduction.md
   - Getting Started:

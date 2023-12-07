@@ -18,41 +18,6 @@
     --md-code-fg-color: #d1cbc7;
 }
 
-body
-{
-    background-color: #161616;
-    background-image: url("../Resources/grain.png");
-}
-
-.md-header
-{
-    background-color: #161616;
-    background-image: url("../Resources/grain.png");
-}
-
-table
-{
-    background-color: #161616;
-    background-image: url("../Resources/grain.png");
-}
-
-.md-tabs
-{
-    background: transparent;
-}
-
-.md-nav--secondary .md-nav__title
-{
-    box-shadow: none;
-    background-color: transparent;
-}
-
-.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link
-{
-    box-shadow: none;
-    background-color: transparent;
-}
-
 .md-footer-meta__inner
 {
     display: none;
