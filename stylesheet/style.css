@@ -1,404 +1,249 @@
-body {
-  background-color: #161616;
-  background-image: url("../Resources/grain.png");
-  color: #C0BAB3;
-  font-family: Inter;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.md-header, .md-tabs {
+  box-shadow: none;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  background-color: transparent;
+}
+
+.md-tabs {
+  height: 100%;
+  font-weight: normal;
+}
+
+.md-sidebar {
+  display: none;
+}
+
+html {
+  font-family: "Inter";
+  color: #d0cdcd;
   font-weight: bold;
-  margin: 0;
-  letter-spacing: -0.02em;
-  cursor: default;
+}
+
+body {
+  background-color: rgb(11, 11, 11);
+  height: 100%;
+  display: flex;
+}
+
+h1 {
+  font-size: 4.5em;
+  letter-spacing: -0.05em;
+  line-height: 0.9em;
 }
 @media (min-width: 576px) {
-  body {
-    letter-spacing: -0.05em;
+  h1 {
+    font-size: 6em;
   }
 }
 @media (min-width: 900px) {
-  body {
-    letter-spacing: -0.08em;
-  }
-}
-@media (min-width: 1400px) {
-  body {
-    letter-spacing: -0.1em;
-  }
-}
-@media (min-width: 2000px) {
-  body {
-    letter-spacing: -0.1em;
-  }
-}
-
-canvas {
-  position: absolute;
-  width: 70em;
-  height: 20em;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#center-container {
-  position: absolute;
-  width: 20em;
-  height: 20em;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-@media (min-width: 576px) {
-  #center-container {
-    width: 30em;
-  }
-}
-@media (min-width: 900px) {
-  #center-container {
-    width: 50em;
-  }
-}
-@media (min-width: 1400px) {
-  #center-container {
-    width: 70em;
-  }
-}
-@media (min-width: 2000px) {
-  #center-container {
-    width: 90em;
-  }
-}
-
-#Title {
-  transform-origin: bottom left;
-  font-size: 1.5em;
-  position: absolute;
-  margin: 0;
-  transform: skew(-14.5deg) rotate(-14.5deg);
-  width: 48.5%;
-  bottom: 50%;
-  padding-bottom: 0.1em;
-}
-@media (min-width: 576px) {
-  #Title {
-    font-size: 2.3em;
-  }
-}
-@media (min-width: 900px) {
-  #Title {
-    font-size: 3.9em;
-  }
-}
-@media (min-width: 1400px) {
-  #Title {
-    font-size: 5.4em;
-  }
-}
-@media (min-width: 2000px) {
-  #Title {
+  h1 {
     font-size: 7em;
   }
 }
 
-#Description {
-  font-size: 0.5em;
-  color: #C0BAB3;
-  transform-origin: bottom right;
-  position: absolute;
-  margin: 0;
-  padding-bottom: 0.8em;
-  transform: skew(14.5deg) rotate(14.5deg);
-  width: 48.5%;
-  bottom: 50%;
-  right: 0;
+h2 {
+  font-size: 2em;
 }
 @media (min-width: 576px) {
-  #Description {
-    font-size: 0.9em;
+  h2 {
+    font-size: 3em;
   }
 }
 @media (min-width: 900px) {
-  #Description {
+  h2 {
+    font-size: 3em;
+  }
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+@media (min-width: 900px) {
+  p {
     font-size: 1.5em;
   }
 }
-@media (min-width: 1400px) {
-  #Description {
-    font-size: 2em;
-  }
-}
-@media (min-width: 2000px) {
-  #Description {
-    font-size: 2.5em;
-  }
+
+button {
+  font-size: 2em;
+  color: #d0cdcd;
+  background-color: rgb(47, 47, 47);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 1px 2px 4px rgb(0, 0, 0);
 }
 
-#Description2 {
-  font-size: 0.6em;
-  color: #8D8D8D;
-  transform-origin: top left;
+#background {
   position: absolute;
-  margin: 0;
-  padding-top: 0.8px;
-  transform: skew(14.5deg) rotate(14.5deg);
-  top: 50%;
-  width: 48.5%;
-  backface-visibility: hidden;
-}
-#Description2 a {
-  text-decoration: none;
-  color: #9C6029;
-  transition: ease-in-out 300ms;
-}
-#Description2 a:hover {
-  color: #d8873b;
-  cursor: pointer;
-  transition: ease-in-out 300ms;
-}
-@media (min-width: 576px) {
-  #Description2 {
-    font-size: 0.9em;
-  }
-}
-@media (min-width: 900px) {
-  #Description2 {
-    font-size: 1.5em;
-  }
-}
-@media (min-width: 1400px) {
-  #Description2 {
-    font-size: 2em;
-  }
-}
-@media (min-width: 2000px) {
-  #Description2 {
-    font-size: 2.5em;
-  }
-}
-
-#DownloadButton {
-  font-size: 0.9em;
-  color: #8D8D8D;
-  transform-origin: bottom right;
-  position: absolute;
-  margin: 0;
-  padding-top: 0.8em;
-  transform: skew(-14.5deg) rotate(-14.5deg);
-  top: 50%;
-  right: 0;
-  width: 48.5%;
-}
-#DownloadButton a {
-  position: absolute;
-  top: 0;
-  transition: ease-in-out 300ms;
-}
-#DownloadButton a:hover {
-  cursor: pointer;
-  color: #9C6029;
-  transition: ease-in-out 300ms;
-}
-@media (min-width: 576px) {
-  #DownloadButton {
-    font-size: 1.3em;
-  }
-}
-@media (min-width: 900px) {
-  #DownloadButton {
-    font-size: 2.3em;
-  }
-}
-@media (min-width: 1400px) {
-  #DownloadButton {
-    font-size: 3.2em;
-  }
-}
-@media (min-width: 2000px) {
-  #DownloadButton {
-    font-size: 4em;
-  }
-}
-
-#BuildButton {
-  font-size: 0.9em;
-  color: #8D8D8D;
-  transform-origin: bottom right;
-  position: absolute;
-  margin: 0;
-  padding-top: 0.8em;
-  transform: skew(-14.5deg) rotate(-14.5deg);
-  top: 50%;
-  right: 0;
-  width: 23.5%;
-}
-#BuildButton a {
-  position: absolute;
-  top: 0;
-  transition: ease-in-out 300ms;
-}
-#BuildButton a:hover {
-  cursor: pointer;
-  color: #9C6029;
-  transition: ease-in-out 300ms;
-}
-@media (min-width: 576px) {
-  #BuildButton {
-    font-size: 1.3em;
-  }
-}
-@media (min-width: 900px) {
-  #BuildButton {
-    font-size: 2.3em;
-  }
-}
-@media (min-width: 1400px) {
-  #BuildButton {
-    font-size: 3.2em;
-  }
-}
-@media (min-width: 2000px) {
-  #BuildButton {
-    font-size: 4em;
-  }
-}
-
-#Nav {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
   width: 100%;
+  margin-top: -5%;
+  height: 60%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../Resources/editor.png") center center;
+  background-size: cover;
+  background-position-x: 100%;
+  background-position-y: 50%;
+  position: fixed;
+  z-index: -1;
 }
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translate(-20%, -20%);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(0);
-    opacity: 1;
-  }
-}
-@keyframes slideInFromTop {
-  0% {
-    transform: translateY(-20%);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(0);
-    opacity: 1;
+@media (min-width: 576px) {
+  #background {
+    height: 60%;
   }
 }
-@keyframes slideInFromRight {
-  0% {
-    transform: translate(20%, 20%);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(0);
-    opacity: 1;
+@media (min-width: 900px) {
+  #background {
+    height: 100%;
   }
 }
-@keyframes slideInFromBack {
-  0% {
-    transform: translate(20%, -20%);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(0);
-    opacity: 1;
+@media (min-width: 1400px) {
+  #background {
+    height: 100%;
   }
 }
-@keyframes slideInFromFront {
-  0% {
-    transform: translate(-20%, 20%);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(0);
-    opacity: 1;
+@media (min-width: 2000px) {
+  #background {
+    height: 100%;
   }
 }
-#Grid {
-  fill: none;
-  stroke: #555555;
-  stroke-miterlimit: 10;
+
+#landing {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 10em;
+  padding-bottom: 10em;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+@media (min-width: 576px) {
+  #landing {
+    margin-left: 11%;
+    margin-right: 11%;
+  }
+}
+@media (min-width: 900px) {
+  #landing {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+#landing p {
+  margin: 0;
+  width: 100%;
+  font-weight: 500;
+  text-shadow: 1px 2px 4px rgb(0, 0, 0);
+}
+@media (min-width: 900px) {
+  #landing p {
+    width: 50%;
+  }
+}
+#landing h1 {
+  margin: 0;
+  text-shadow: 1px 2px 4px rgb(0, 0, 0);
 }
 
-.Block {
-  background-color: blue;
-  pointer-events: none;
-  position: absolute;
-  fill: #C0BAB3;
-  stroke: #161616;
-  stroke-miterlimit: 10;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  transition: ease-in-out 300ms;
+.twoButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
-.Block text {
-  fill: #161616;
-  font-size: 21px;
-  letter-spacing: -0.02em;
-  font-weight: normal;
+@media (min-width: 576px) {
+  .twoButtons {
+    flex-direction: row;
+  }
 }
 
-.cls-1 {
-  pointer-events: auto;
+.orangeButton {
+  background-color: #9C6029;
 }
 
-.Block:hover {
-  transition: ease-in-out 300ms;
-  transform: translateY(-5px);
-  filter: brightness(130%);
-  cursor: pointer;
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+  gap: 3em;
+  padding: 3em;
+  border-radius: 10px;
+  box-shadow: 1px 2px 4px rgb(0, 0, 0);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+@media (min-width: 900px) {
+  .section {
+    flex-direction: row;
+  }
 }
 
-#HomeBlock {
-  animation: 1s ease-in-out 0s 1 slideInFromLeft;
-  fill: #A6C587;
+.box {
+  background-color: rgb(69, 69, 69);
+  width: 100%;
+  height: 100%;
+  padding: 3em;
+  border-radius: 10px;
+  box-shadow: 1px 2px 4px rgb(0, 0, 0);
+}
+@media (min-width: 576px) {
+  .box {
+    width: 80%;
+  }
+}
+@media (min-width: 900px) {
+  .box {
+    width: 40%;
+  }
+}
+.box h2 {
+  margin: 0;
 }
 
-#AboutBlock {
-  animation: 1s ease-in-out 0s 1 slideInFromFront;
-  fill: #51AC8A;
+#section1 {
+  background-color: rgba(41, 41, 41, 0.5);
 }
-#AboutBlock text {
-  font-size: 18px;
-}
-
-#DocumentationBlock {
-  animation: 1s ease-in-out 0s 1 slideInFromRight;
-  fill: #20375D;
-}
-#DocumentationBlock text {
-  fill: #C0BAB3;
-  stroke: #C0BAB3;
-  font-size: 24px;
+#section1 button {
+  background-color: #9C6029;
 }
 
-#GettingStartedBlock {
-  animation: 1s ease-in-out 0s 1 slideInFromTop;
-  fill: #781428;
+#section2 {
+  background-color: rgba(105, 105, 105, 0.5);
 }
-#GettingStartedBlock text {
-  fill: #C0BAB3;
-  stroke: #C0BAB3;
-  font-size: 18px;
-}
-
-#GitHubBlock {
-  animation: 1s ease-in-out 0s 1 slideInFromBack;
-  fill: #D04727;
-}
-#GitHubBlock text {
-  font-size: 24px;
-  letter-spacing: -0.03em;
+#section2 .box {
+  background: none;
+  box-shadow: none;
+  padding: 0;
 }
 
-#ContactBlock {
-  animation: 1s ease-in-out 0s 1 slideInFromRight;
-  fill: #D79100;
+#section2Buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
-#ContactBlock text {
-  font-size: 24px;
+
+#section3 {
+  text-align: center;
+  background-color: rgba(41, 41, 41, 0.5);
+}
+#section3 .box {
+  background: none;
+  box-shadow: none;
 }/*# sourceMappingURL=style.css.map */

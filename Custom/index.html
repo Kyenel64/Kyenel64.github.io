@@ -1,0 +1,81 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+{% extends "main.html" %}
+{% block tabs %}
+  {{ super() }}
+<html>
+  <head>
+    <title>Locus Game Engine</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../stylesheet/style.css" />
+  </head>
+
+  <body>
+
+    <!-- landing -->
+    <div id="landing">
+      <h1 class="title" id="title">Locus <br> Game Engine</h1>
+      <p class="description">Locus is a free and open-source game engine that is general-purpose and lightweight.</p>
+      <div class="twoButtons">
+        <button class="orangeButton">Build from Source</button>
+        <button>Download</button>
+      </div>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="section" id="section1">
+      <div class="box">
+        <h2>Progress</h2>
+        <p>Locus is still in early stages of development. <br> Progress can be tracked on Trello.</p>
+        <button class="orangeButton">Trello</button>
+      </div>
+
+      <div class="box">
+        <h2>Locus 2D</h2>
+        <p>Locus is still in early stages of development and the focus right now is on the 2D features and implementing basic engine features. 
+          Once Locus has a solid 2D workflow, implementation for 3D features will begin.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section" id="section2">
+      <div class="box">
+        <p>Learn how to use Locus or find C# references here.</p>
+      </div>
+
+      <div id="section2Buttons" class="box">
+        <button>Learn Locus</button>
+        <button class="orangeButton">Documentation</button>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section" id="section3">
+      <div class="box">
+        <h2>Contribute</h2>
+        <p>Contribution to the project is always welcome. If you would like to help, please submit a pull request on the GitHub repository.</p>
+        <button class="orangeButton">GitHub</button>
+      </div>
+
+      <div class="box">
+        <h2>Issues</h2>
+        <p>If you come across a bug, submit an issue on the GitHub repository.</p>
+        <button class="orangeButton">GitHub</button>
+      </div>
+
+      <div class="box">
+        <h2>Contact</h2>
+        <p>If you have questions or wish to get in contact, information can be found in the contacts page.</p>
+        <button class="orangeButton">Contact</button>
+      </div>
+    </div>
+
+    <div id="background"></div>
+  </body>
+</html>
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}
