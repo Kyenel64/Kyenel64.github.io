@@ -21,13 +21,19 @@ $color-orange: #9C6029;
 
 .md-tabs
 {
-    height: 100%;
     font-weight: normal;
 }
 
-.md-sidebar
+.md-main
 {
-    display: none;
+    display: block;
+
+    @media only screen and (min-width: 1220px) {display: none;}
+}
+
+body
+{
+    background-color: rgb(11, 11, 11);
 }
 
 
@@ -42,7 +48,11 @@ $screen-xl-min: 2000px;
 @mixin lg { @media (min-width: #{$screen-lg-min}) { @content; } }
 @mixin xl { @media (min-width: #{$screen-xl-min}) { @content; } }
 
+
+
 // --- Homepage styling ---
+.homepage
+{
 html
 {
     font-family: "Inter";
@@ -91,7 +101,7 @@ h2
 
 p
 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: 500;
 
     @include md
@@ -112,6 +122,15 @@ button
     font-weight: bold;
     border-radius: 5px;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
+    transition: ease-in-out 300ms;
+}
+
+button:hover
+{
+    cursor: pointer;
+    background-color: rgb(67, 67, 67);
+
+    transition: ease-in-out 300ms;
 }
 
 
@@ -198,10 +217,11 @@ button
 .twoButtons
 {
     display: flex;
+    width: 100%;
     flex-direction: column;
     gap: 1em;
 
-    @include sm
+    @include lg
     {
         flex-direction: row;
     }
@@ -212,12 +232,21 @@ button
     background-color: $color-orange;
 }
 
+.orangeButton:hover
+{
+    cursor: pointer;
+    background-color: #c47831;
+
+    transition: ease-in-out 300ms;
+}
+
 .section
 {
     //background-color: green;
     display: flex;
     flex-direction: column;
-    margin-top: 3em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
     gap: 3em;
     padding: 3em;
     border-radius: 10px;
@@ -264,30 +293,11 @@ button
 #section1
 {
     background-color: rgba(41, 41, 41, 0.5);
-
-    button
-    {
-        background-color: $color-orange;
-    }
 }
 
 #section2
 {
     background-color: rgba(105, 105, 105, 0.5);
-
-    .box
-    {
-        background: none;
-        box-shadow: none;
-        padding: 0;
-    }
-}
-
-#section2Buttons
-{
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
 }
 
 #section3
@@ -299,4 +309,5 @@ button
         background: none;
         box-shadow: none;
     }
+}
 }

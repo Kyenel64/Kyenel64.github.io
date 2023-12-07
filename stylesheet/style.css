@@ -14,67 +14,70 @@
 }
 
 .md-tabs {
-  height: 100%;
   font-weight: normal;
 }
 
-.md-sidebar {
-  display: none;
+.md-main {
+  display: block;
 }
-
-html {
-  font-family: "Inter";
-  color: #d0cdcd;
-  font-weight: bold;
+@media only screen and (min-width: 1220px) {
+  .md-main {
+    display: none;
+  }
 }
 
 body {
   background-color: rgb(11, 11, 11);
+}
+
+.homepage html {
+  font-family: "Inter";
+  color: #d0cdcd;
+  font-weight: bold;
+}
+.homepage body {
+  background-color: rgb(11, 11, 11);
   height: 100%;
   display: flex;
 }
-
-h1 {
+.homepage h1 {
   font-size: 4.5em;
   letter-spacing: -0.05em;
   line-height: 0.9em;
 }
 @media (min-width: 576px) {
-  h1 {
+  .homepage h1 {
     font-size: 6em;
   }
 }
 @media (min-width: 900px) {
-  h1 {
+  .homepage h1 {
     font-size: 7em;
   }
 }
-
-h2 {
+.homepage h2 {
   font-size: 2em;
 }
 @media (min-width: 576px) {
-  h2 {
+  .homepage h2 {
     font-size: 3em;
   }
 }
 @media (min-width: 900px) {
-  h2 {
+  .homepage h2 {
     font-size: 3em;
   }
 }
-
-p {
-  font-size: 1.2em;
+.homepage p {
+  font-size: 1.5em;
   font-weight: 500;
 }
 @media (min-width: 900px) {
-  p {
+  .homepage p {
     font-size: 1.5em;
   }
 }
-
-button {
+.homepage button {
   font-size: 2em;
   color: #d0cdcd;
   background-color: rgb(47, 47, 47);
@@ -86,9 +89,14 @@ button {
   font-weight: bold;
   border-radius: 5px;
   box-shadow: 1px 2px 4px rgb(0, 0, 0);
+  transition: ease-in-out 300ms;
 }
-
-#background {
+.homepage button:hover {
+  cursor: pointer;
+  background-color: rgb(67, 67, 67);
+  transition: ease-in-out 300ms;
+}
+.homepage #background {
   position: absolute;
   width: 100%;
   margin-top: -5%;
@@ -101,27 +109,26 @@ button {
   z-index: -1;
 }
 @media (min-width: 576px) {
-  #background {
+  .homepage #background {
     height: 60%;
   }
 }
 @media (min-width: 900px) {
-  #background {
+  .homepage #background {
     height: 100%;
   }
 }
 @media (min-width: 1400px) {
-  #background {
+  .homepage #background {
     height: 100%;
   }
 }
 @media (min-width: 2000px) {
-  #background {
+  .homepage #background {
     height: 100%;
   }
 }
-
-#landing {
+.homepage #landing {
   margin-left: 5%;
   margin-right: 5%;
   padding-top: 10em;
@@ -132,52 +139,56 @@ button {
   gap: 4em;
 }
 @media (min-width: 576px) {
-  #landing {
+  .homepage #landing {
     margin-left: 11%;
     margin-right: 11%;
   }
 }
 @media (min-width: 900px) {
-  #landing {
+  .homepage #landing {
     margin-left: 20%;
     margin-right: 20%;
   }
 }
-#landing p {
+.homepage #landing p {
   margin: 0;
   width: 100%;
   font-weight: 500;
   text-shadow: 1px 2px 4px rgb(0, 0, 0);
 }
 @media (min-width: 900px) {
-  #landing p {
+  .homepage #landing p {
     width: 50%;
   }
 }
-#landing h1 {
+.homepage #landing h1 {
   margin: 0;
   text-shadow: 1px 2px 4px rgb(0, 0, 0);
 }
-
-.twoButtons {
+.homepage .twoButtons {
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 1em;
 }
-@media (min-width: 576px) {
-  .twoButtons {
+@media (min-width: 1400px) {
+  .homepage .twoButtons {
     flex-direction: row;
   }
 }
-
-.orangeButton {
+.homepage .orangeButton {
   background-color: #9C6029;
 }
-
-.section {
+.homepage .orangeButton:hover {
+  cursor: pointer;
+  background-color: #c47831;
+  transition: ease-in-out 300ms;
+}
+.homepage .section {
   display: flex;
   flex-direction: column;
-  margin-top: 3em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   gap: 3em;
   padding: 3em;
   border-radius: 10px;
@@ -190,12 +201,11 @@ button {
   margin-right: 5%;
 }
 @media (min-width: 900px) {
-  .section {
+  .homepage .section {
     flex-direction: row;
   }
 }
-
-.box {
+.homepage .box {
   background-color: rgb(69, 69, 69);
   width: 100%;
   height: 100%;
@@ -204,46 +214,29 @@ button {
   box-shadow: 1px 2px 4px rgb(0, 0, 0);
 }
 @media (min-width: 576px) {
-  .box {
+  .homepage .box {
     width: 80%;
   }
 }
 @media (min-width: 900px) {
-  .box {
+  .homepage .box {
     width: 40%;
   }
 }
-.box h2 {
+.homepage .box h2 {
   margin: 0;
 }
-
-#section1 {
+.homepage #section1 {
   background-color: rgba(41, 41, 41, 0.5);
 }
-#section1 button {
-  background-color: #9C6029;
-}
-
-#section2 {
+.homepage #section2 {
   background-color: rgba(105, 105, 105, 0.5);
 }
-#section2 .box {
-  background: none;
-  box-shadow: none;
-  padding: 0;
-}
-
-#section2Buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-}
-
-#section3 {
+.homepage #section3 {
   text-align: center;
   background-color: rgba(41, 41, 41, 0.5);
 }
-#section3 .box {
+.homepage #section3 .box {
   background: none;
   box-shadow: none;
 }/*# sourceMappingURL=style.css.map */
