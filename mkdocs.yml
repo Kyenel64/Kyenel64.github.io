@@ -28,7 +28,7 @@ extra:
 
 # page tree
 nav:
-  - Home: Pages/Home.md
+  - Home: index.md
   - Getting Started:
     - Introduction: Pages/GettingStarted/Introduction.md
     - How to Build: Pages/GettingStarted/HowToBuild.md
