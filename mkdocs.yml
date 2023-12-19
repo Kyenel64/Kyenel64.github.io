@@ -6,6 +6,8 @@ theme:
   name: material
   logo: 'Resources/LocusLogoIcon.png'
   features:
+    - navigation.instant
+    - navigation.instant.progress
     - navigation.tabs
     - navigation.top
   font:
