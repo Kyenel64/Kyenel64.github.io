@@ -4,13 +4,12 @@ theme:
     scheme: locus
     primary: custom
   name: material
-  logo: 'Resources/LocusLogo_Border.png'
+  logo: 'Resources/LocusLogoIcon.png'
   features:
     - navigation.instant
     - navigation.instant.progress
     - navigation.tabs
     - navigation.top
-  custom_dir: docs/Custom/
   font:
     text: Inter
   favicon: img/logo.ico
@@ -29,16 +28,14 @@ extra:
 
 # page tree
 nav:
-  - Home: index.md
-  - About:
-    - Introduction: Pages/About/Introduction.md
+  - Home: Pages/Home.md
   - Getting Started:
     - Introduction: Pages/GettingStarted/Introduction.md
     - How to Build: Pages/GettingStarted/HowToBuild.md
-    - Workflow: Pages/GettingStarted/Workflow.md
-    - Example Project - Solar System: Pages/GettingStarted/ExampleProject_SolarSystem.md
   - Documentation:
     - Introduction: Pages/Documentation/Introduction.md
+    - Workflow: Pages/Documentation/Workflow.md
+    - Example Project - Solar System: Pages/Documentation/ExampleProject_SolarSystem.md
     - Classes:
       - Component: Pages/Documentation/Classes/Component.md
       - Entity: Pages/Documentation/Classes/Entity.md
