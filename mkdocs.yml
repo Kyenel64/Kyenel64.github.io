@@ -35,16 +35,20 @@ nav:
   - Documentation:
     - Introduction: Pages/Documentation/Introduction.md
     - Workflow: Pages/Documentation/Workflow.md
-    - Example Project - Solar System: Pages/Documentation/ExampleProject_SolarSystem.md
     - Classes:
+      - CircleCollider2DComponent: Pages/Documentation/Classes/CircleCollider2DComponent.md
+      - CircleRendererComponent: Pages/Documentation/Classes/CircleRendererComponent.md
       - Color: Pages/Documentation/Classes/Color.md
       - Component: Pages/Documentation/Classes/Component.md
       - Entity: Pages/Documentation/Classes/Entity.md
       - Input: Pages/Documentation/Classes/Input.md
-      - KeyCode: Pages/Documentation/Classes/KeyCode.md
       - Mat4: Pages/Documentation/Classes/Mat4.md
+      - Rigidbody2DComponent: Pages/Documentation/Classes/Rigidbody2DComponent.md
+      - SpriteRendererComponent: Pages/Documentation/Classes/SpriteRendererComponent.md
+      - TransformComponent: Pages/Documentation/Classes/TransformComponent.md
       - Vec2: Pages/Documentation/Classes/Vec2.md
       - Vec3: Pages/Documentation/Classes/Vec3.md
       - Vec4: Pages/Documentation/Classes/Vec4.md
     - Enums:
+      - KeyCode: Pages/Documentation/Enums/KeyCode.md
       - RigidbodyType: Pages/Documentation/Enums/RigidbodyType.md
