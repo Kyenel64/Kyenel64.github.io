@@ -1,8 +1,9 @@
 # Locus Game Engine
 Locus is a free and open-source game engine aimed to be lightweight and general-purpose. <br>
-The engine is still in development. Progress can be tracked <a href="https://trello.com/b/NNDPkCjF/locus-kanban" target="_blank">here</a>.
 
 ### <a href="https://github.com/Kyenel64/Locus-Engine/releases/tag/v0.1.0-alpha" target="_blank">Download Latest</a> or <a href="Pages/GettingStarted/HowToBuild">Build from Source</a>
+
+The engine is still in development. Progress can be tracked <a href="https://trello.com/b/NNDPkCjF/locus-kanban" target="_blank">here</a>.
 
 ## About Locus
 The engine is ECS-based with C# scripting, making the workflow familiar and easy to use for many game developers. <br>

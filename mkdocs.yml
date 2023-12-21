@@ -37,6 +37,14 @@ nav:
     - Workflow: Pages/Documentation/Workflow.md
     - Example Project - Solar System: Pages/Documentation/ExampleProject_SolarSystem.md
     - Classes:
+      - Color: Pages/Documentation/Classes/Color.md
       - Component: Pages/Documentation/Classes/Component.md
       - Entity: Pages/Documentation/Classes/Entity.md
+      - Input: Pages/Documentation/Classes/Input.md
+      - KeyCode: Pages/Documentation/Classes/KeyCode.md
+      - Mat4: Pages/Documentation/Classes/Mat4.md
+      - Vec2: Pages/Documentation/Classes/Vec2.md
       - Vec3: Pages/Documentation/Classes/Vec3.md
+      - Vec4: Pages/Documentation/Classes/Vec4.md
+    - Enums:
+      - RigidbodyType: Pages/Documentation/Enums/RigidbodyType.md
