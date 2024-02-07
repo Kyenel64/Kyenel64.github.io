@@ -572,8 +572,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#content-browser" class="md-nav__link">
-    Content Browser
+  <a href="#project-browser" class="md-nav__link">
+    Project Browser
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-inspector" class="md-nav__link">
+    Resource Inspector
   </a>
   
 </li>
@@ -1092,8 +1099,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#content-browser" class="md-nav__link">
-    Content Browser
+  <a href="#project-browser" class="md-nav__link">
+    Project Browser
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-inspector" class="md-nav__link">
+    Resource Inspector
   </a>
   
 </li>
@@ -1136,7 +1150,8 @@
 
 
 <h1 id="workflow">Workflow</h1>
-<p>The workflow for Locus is similar to many other ECS-based engines such as Unity. <br></p>
+<p>The workflow for Locus is similar to many other ECS-based engines such as Unity. <br>
+Note: Locus does not have a file watching systems so any changes to scripts must be reloaded through the Project &gt; Reload Scripts dropdown, and newly added resources must be rescanned through the Project &gt; Rescan Resources dropdown.</p>
 <h2 id="entities">Entities</h2>
 <p>Entities are the objects within a scene. They can represent anything from characters to lighting. Under the hood, entities are just containers for components and only holds an ID. By adding components, entities are able to carry out all kinds of functionalities.<br></p>
 <p>All entities contain a unique ID (UUID), a tag, and a transform. </p>
@@ -1192,9 +1207,12 @@ If an entity with a camera component is selected, it will display a preview in t
 <h3 id="properties">Properties</h3>
 <p>The properties panel contains all the components attached to the selected entity. All entities contain the tag component and transform component.
 You can add, remove, and copy components here.</p>
-<h3 id="content-browser">Content Browser</h3>
-<p>The content browser displays the directory of the active project. The left hand side displays the entire project tree and the right hand side displays the items in the current folder.
-You can drag and drop certain items from the content browser to respective areas. </p>
+<h3 id="project-browser">Project Browser</h3>
+<p>The project browser displays the directory of the active project. The left hand side displays the entire project tree and the right hand side displays the items in the current folder.
+You can create new materials by clicking on the plus sign in the top left corner.</p>
+<h3 id="resource-inspector">Resource Inspector</h3>
+<p>The resource inspector panel displays properties of the currently selected resource. 
+Here you can modify values or attach textures to materials.</p>
 <h3 id="console">Console</h3>
 <p>The console panel displays error messages and a trace for each error. Error messages can be copied, cleared, and filtered.</p>
 <h3 id="debug">Debug</h3>
