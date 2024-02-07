@@ -10,10 +10,6 @@ The engine is ECS-based with C# scripting, making the workflow familiar and easy
 Locus comes with a fully integrated editor with a simple interface to help build games of any genre.
 ![Locus editor](Resources/editor.png)
 
-## Locus 2D
-Right now, development is focused on the engine's 2D systems. This includes 2D physics, sprite rendering, spritesheets, 2D skeletal animations, etc.
-Work on the 3D systems will begin once more of the 2D systems are implemented.
-
 ## Contribute
 Contribution to the project is always welcome. If you would like to help out or if you found a bug, please submit a pull-request/issue on the <a href="https://github.com/Kyenel64/Locus-Engine" target="_blank">GitHub repository</a>.
 

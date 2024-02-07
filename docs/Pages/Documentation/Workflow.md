@@ -1,5 +1,6 @@
 # Workflow
 The workflow for Locus is similar to many other ECS-based engines such as Unity. <br>
+Note: Locus does not have a file watching systems so any changes to scripts must be reloaded through the Project > Reload Scripts dropdown, and newly added resources must be rescanned through the Project > Rescan Resources dropdown.
 
 ## Entities
 Entities are the objects within a scene. They can represent anything from characters to lighting. Under the hood, entities are just containers for components and only holds an ID. By adding components, entities are able to carry out all kinds of functionalities.<br>
@@ -68,9 +69,13 @@ The scene hierarchy contains the scene graph of the entities within the active s
 The properties panel contains all the components attached to the selected entity. All entities contain the tag component and transform component.
 You can add, remove, and copy components here.
 
-### Content Browser
-The content browser displays the directory of the active project. The left hand side displays the entire project tree and the right hand side displays the items in the current folder.
-You can drag and drop certain items from the content browser to respective areas. 
+### Project Browser
+The project browser displays the directory of the active project. The left hand side displays the entire project tree and the right hand side displays the items in the current folder.
+You can create new materials by clicking on the plus sign in the top left corner.
+
+### Resource Inspector
+The resource inspector panel displays properties of the currently selected resource. 
+Here you can modify values or attach textures to materials.
 
 ### Console
 The console panel displays error messages and a trace for each error. Error messages can be copied, cleared, and filtered.
